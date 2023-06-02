@@ -5,10 +5,6 @@ import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
-//TODO: Lulu Project Page
-//TODO: Dolthub Project Page
-//TODO: CAH Project Page
-
 export default function Portfolio() {
   const cardArray = [
     {
@@ -22,16 +18,6 @@ export default function Portfolio() {
       href: "lulu",
     },
     {
-      src: "/images/DolthubCarousel.png",
-      alt: "Dolthub Carousel",
-      width: 3455,
-      height: 1790,
-      langs: "Typescript, React, Tailwind, Go, Dolt",
-      projName: "Dolthub Carousel",
-      copy: "At Dolthub I was tasked with creating a custom carousel to help introduce our product to new users.",
-      href: "dolthub",
-    },
-    {
       src: "/images/CAHDeckBuilder.png",
       alt: "Cards Against Humanity Deck Builder",
       width: 3456,
@@ -40,6 +26,16 @@ export default function Portfolio() {
       projName: "CAH Custom Deck Builder",
       copy: "A personal project where a user can create their own custom Cards Against Humanity deck or pack.",
       href: "cah",
+    },
+    {
+      src: "/images/DolthubCarousel.png",
+      alt: "Dolthub Carousel",
+      width: 3455,
+      height: 1790,
+      langs: "Typescript, React, Tailwind, Go, Dolt",
+      projName: "Dolthub Carousel",
+      copy: "At Dolthub I was tasked with creating a custom carousel to help introduce our product to new users.",
+      href: "dolthub",
     },
   ];
 

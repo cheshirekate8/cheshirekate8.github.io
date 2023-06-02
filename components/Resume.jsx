@@ -125,14 +125,14 @@ export default function Resume() {
                       onClick={() => setExperienceToggle(experience.id)}
                     >
                       <AiOutlineMinus
-                        className={`transform ease-in-out duration-200 absolute ${
+                        className={`ease-in-out duration-200 absolute ${
                           experience.id == experienceToggle
                             ? "opacity-100"
                             : "opacity-0"
                         }`}
                       />
                       <AiOutlinePlus
-                        className={`transform ease-in-out duration-200 absolute ${
+                        className={`ease-in-out duration-200 absolute ${
                           experience.id == experienceToggle
                             ? "opacity-0"
                             : "opacity-100"
@@ -188,18 +188,18 @@ export default function Resume() {
                       </div>
                     </div>
                     <button
-                      className="dot transform ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
+                      className="dot ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
                       onClick={() => setEducationToggle(education.id)}
                     >
                       <AiOutlineMinus
-                        className={`transform ease-in-out duration-200 absolute  ${
+                        className={`ease-in-out duration-200 absolute  ${
                           education.id == educationToggle
                             ? "opacity-100"
                             : "opacity-0"
                         }`}
                       />
                       <AiOutlinePlus
-                        className={`transform ease-in-out duration-200 absolute ${
+                        className={`ease-in-out duration-200 absolute ${
                           education.id == educationToggle
                             ? "opacity-0"
                             : "opacity-100"

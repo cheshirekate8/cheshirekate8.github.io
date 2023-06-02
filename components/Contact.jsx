@@ -31,7 +31,7 @@ export default function Contact() {
     return (
       <Link className={`flex m-8 text-left group ${href ? "pointer-events-auto":"pointer-events-none"}`} href={href}>
         <div className="flex items-center">
-          <div className="dot w-14 h-14 border-2 border-white rounded-full drop-shadow-hard bg-cyan-600 group-hover:bg-sky-900  transform ease-in-out duration-200 flex justify-center items-center">
+          <div className="dot w-14 h-14 border-2 border-white rounded-full drop-shadow-hard bg-cyan-600 group-hover:bg-sky-900 ease-in-out duration-200 flex justify-center items-center">
             {icon}
           </div>
           <div className="w-12 h-0 border border-white"></div>

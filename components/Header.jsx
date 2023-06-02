@@ -46,7 +46,7 @@ const Header = () => {
     <div className={last ? "my-24" : "my-8"}>
       <button
         onClick={() => handleClick(handleVar)}
-        className="uppercase relative transform ease-in-out duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:drop-shadow-hard hover:text-cyan-600"
+        className="uppercase relative ease-in-out duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:drop-shadow-hard hover:text-cyan-600"
       >
         {label}
       </button>
