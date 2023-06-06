@@ -1,9 +1,7 @@
 import { Fade } from "react-reveal";
 import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
-import KeenSlider from "keen-slider";
 import { useKeenSlider } from "keen-slider/react";
-import SectionTitle from "../components/SectionTitle";
 
 export default function Sandstone() {
   function ThumbnailPlugin(mainRef) {
@@ -56,7 +54,7 @@ export default function Sandstone() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 5000);
+          }, 3000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -112,10 +110,10 @@ export default function Sandstone() {
             Present
           </span>
         </div>
-        <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 md:px-0">
+        <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 lg:px-0">
           <div className="w-full lg:w-1/2">
-            <div ref={sliderRef} className="keen-slider mb-4">
-              <div className="keen-slider__slide number-slide1">
+            <div ref={sliderRef} className="keen-slider rounded mb-4">
+              <div className="keen-slider__slide number-slide1 rounded">
                 <Image
                   src="/images/KinEuphorics.png"
                   className="hidden sm:block"
@@ -131,7 +129,7 @@ export default function Sandstone() {
                   alt="Kin Euphorics Webpage"
                 />
               </div>
-              <div className="keen-slider__slide number-slide2">
+              <div className="keen-slider__slide number-slide2 rounded">
                 <Image
                   src="/images/luluPDPAfter.png"
                   className="hidden sm:block"
@@ -147,7 +145,7 @@ export default function Sandstone() {
                   alt="Lulu PDP Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide3">
+              <div className="keen-slider__slide number-slide3 rounded">
                 <Image
                   src="/images/luluNavAfter.webp"
                   className="hidden sm:block"
@@ -164,8 +162,8 @@ export default function Sandstone() {
                 />
               </div>
             </div>
-            <div ref={thumbnailRef} className="keen-slider thumbnail">
-              <div className="keen-slider__slide number-slide1">
+            <div ref={thumbnailRef} className="keen-slider rounded thumbnail">
+              <div className="keen-slider__slide number-slide1 rounded">
                 <Image
                   src="/images/KinEuphorics.png"
                   className="hidden sm:block"
@@ -181,7 +179,7 @@ export default function Sandstone() {
                   alt="Kin Euphorics Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide2">
+              <div className="keen-slider__slide number-slide2 rounded">
                 <Image
                   src="/images/luluPDPAfter.png"
                   className="hidden sm:block"
@@ -197,7 +195,7 @@ export default function Sandstone() {
                   alt="Lulu PDP Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide3">
+              <div className="keen-slider__slide number-slide3 rounded">
                 <Image
                   src="/images/luluNavAfter.webp"
                   className="hidden sm:block"
