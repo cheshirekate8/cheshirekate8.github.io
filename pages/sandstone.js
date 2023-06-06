@@ -113,7 +113,7 @@ export default function Sandstone() {
           </span>
         </div>
         <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 md:px-0">
-          <div className="DESKTOP w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div ref={sliderRef} className="keen-slider mb-4">
               <div className="keen-slider__slide number-slide1">
                 <Image
