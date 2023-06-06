@@ -5,31 +5,17 @@ import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
-//TODO: Lulu Project Page
-//TODO: Dolthub Project Page
-//TODO: CAH Project Page
-
 export default function Portfolio() {
   const cardArray = [
     {
-      src: "/images/luluPDPAfter.webp",
-      alt: "Lulu And Georgia Product Display Page",
+      src: "/images/SandstoneScreenshot.png",
+      alt: "Sandstone homepage screenshot",
       width: 3456,
       height: 1775,
-      langs: "Shopify, Liquid, Tailwind",
-      projName: "Lulu and Georgia",
-      copy: "I took on 2 major projects while with Lulu and Georgia, redesigns of the Product Display Page and Navigation.",
-      href: "lulu",
-    },
-    {
-      src: "/images/DolthubCarousel.png",
-      alt: "Dolthub Carousel",
-      width: 3455,
-      height: 1790,
-      langs: "Typescript, React, Tailwind, Go, Dolt",
-      projName: "Dolthub Carousel",
-      copy: "At Dolthub I was tasked with creating a custom carousel to help introduce our product to new users.",
-      href: "dolthub",
+      langs: "Shopify, Liquid, React, Tailwind",
+      projName: "Sandstone",
+      copy: "A showcase of my work with Kin, Lulu and Georgia and other internal projects.",
+      href: "sandstone",
     },
     {
       src: "/images/CAHDeckBuilder.png",

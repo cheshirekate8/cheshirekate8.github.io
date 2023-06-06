@@ -40,19 +40,19 @@ export default function Splash() {
         id="splash"
       >
         <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide xl:row-start-1 xl:col-start-1 xl:justify-end">
-          <div className="text-[13px] transform ease-in-out duration-500 md:text-base font-bold">
+          <div className="text-[13px] ease-in-out duration-500 md:text-base font-bold">
             <span className="">Hello, </span>
             <span className="text-cyan-600">my name is</span>
           </div>
-          <div className="text-5xl transform ease-in-out duration-500 md:text-6xl font-black my-4">
+          <div className="text-5xl ease-in-out duration-500 md:text-6xl font-black my-4">
             <span className="text-shadow-black">Katie </span>
             <span className="text-shadow-black text-cyan-600">Young</span>
           </div>
           <div className="flex items-center justify-center">
-            <span className="font-bold text-[13px] transform ease-in-out duration-500 md:text-base ">
+            <span className="font-bold text-[13px] ease-in-out duration-500 md:text-base ">
               I am a
             </span>
-            <span className="font-caveat px-4 capitalize text-2xl transform ease-in-out duration-500 md:text-3xl">
+            <span className="font-caveat px-4 capitalize text-2xl ease-in-out duration-500 md:text-3xl">
               Web Developer
             </span>
           </div>
@@ -67,7 +67,7 @@ export default function Splash() {
           <div className="pattern absolute bottom-0 -left-12 invert opacity-30 w-[80px] h-[80px] md:w-[160px] md:h-[160px]">
             <Image src="/images/pat-2.png" width={160} height={160} alt="" priority />
           </div>
-          <div className="w-[350px] h-[350px] relative mt-28 transform ease-in-out duration-500 md:w-[700px] md:h-[700px] md:mt-56">
+          <div className="w-[350px] h-[350px] relative mt-28 ease-in-out duration-500 md:w-[700px] md:h-[700px] md:mt-56">
             <div className="bg-cyan-600 rounded-full w-full h-full"></div>
             <Image
               src="/images/profile1.png"
@@ -78,17 +78,17 @@ export default function Splash() {
               priority
             />
             <div className="border bg-zinc-800 absolute bottom-8 rounded-full px-6 py-2 flex items-center font-jost font-bold">
-              <div className="text-2xl pr-2 justify-start transform ease-in-out duration-500 md:text-4xl">
+              <div className="text-2xl pr-2 justify-start ease-in-out duration-500 md:text-4xl">
                 <span className="">2 </span>
                 <span className="text-cyan-600">+ </span>
               </div>
-              <div className="uppercase font-semibold text-[9px] flex flex-col transform ease-in-out duration-500 md:text-sm">
+              <div className="uppercase font-semibold text-[9px] flex flex-col ease-in-out duration-500 md:text-sm">
                 <span className="">years of</span>
                 <span className="text-cyan-600">experience</span>
               </div>
             </div>
             <div className="border bg-zinc-800 absolute bottom-4 right-0 rounded-full px-6 py-2 flex items-center font-jost font-bold">
-              <div className="uppercase font-semibold text-[9px] flex flex-col text-right transform ease-in-out duration-500 md:text-sm">
+              <div className="uppercase font-semibold text-[9px] flex flex-col text-right ease-in-out duration-500 md:text-sm">
                 <span className="">Currently employed,</span>
                 <span className="text-cyan-600">interview ready</span>
               </div>
@@ -109,7 +109,7 @@ export default function Splash() {
               })}
             </div>
             <a
-              className="border bg-zinc-800 rounded-full px-6 py-2 flex items-center font-jost font-bold w-max justify-center m-auto transform ease-in-out duration-200 drop-shadow-hard -translate-x-1 -translate-y-1 active:translate-x-0 active:translate-y-0 active:drop-shadow-none hover:bg-sky-900 md:text-lg md:px-12 md:py-4"
+              className="border bg-zinc-800 rounded-full px-6 py-2 flex items-center font-jost font-bold w-max justify-center m-auto ease-in-out duration-200 drop-shadow-hard -translate-x-1 -translate-y-1 active:translate-x-0 active:translate-y-0 active:drop-shadow-none hover:bg-sky-900 md:text-lg md:px-12 md:py-4"
               href="KatieYoungResume.pdf"
               target="_blank"
               download

@@ -37,7 +37,7 @@ module.exports = {
       },
       animation: {
         'reveal': 'reveal .25s ease-in-out forwards ',
-      },
+      }
     },
   },
   plugins: [
