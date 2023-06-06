@@ -27,6 +27,16 @@ export default function Portfolio() {
       copy: "A personal project where a user can create their own custom Cards Against Humanity deck or pack.",
       href: "cah",
     },
+    {
+      src: "/images/qos1.webp",
+      alt: "Queen of Sauce Recipe App",
+      width: 3456,
+      height: 1775,
+      langs: "React, Tailwind, JSON",
+      projName: "Queen of Sauce Cooking",
+      copy: "My capstone project for App Academy where I created a cooking app based on the Stardew Valley recipes.",
+      href: "qos",
+    },
   ];
 
   const Card = ({ src, alt, width, height, langs, projName, copy, href }) => {

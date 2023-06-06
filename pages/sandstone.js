@@ -113,109 +113,103 @@ export default function Sandstone() {
           </span>
         </div>
         <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 md:px-0">
-          <div className="DESKTOP w-full lg:w-1/2 hidden sm:block">
+          <div className="w-full lg:w-1/2">
             <div ref={sliderRef} className="keen-slider mb-4">
               <div className="keen-slider__slide number-slide1">
                 <Image
                   src="/images/KinEuphorics.png"
+                  className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Kin Euphorics Webpage"
                 />
-              </div>
-              <div className="keen-slider__slide number-slide3">
-                <Image
-                  src="/images/luluPDPAfter.png"
-                  width={2000}
-                  height={240}
-                  alt="Lulu PDP"
-                />
-              </div>
-              <div className="keen-slider__slide number-slide5">
-                <Image
-                  src="/images/luluNavAfter.webp"
-                  width={2000}
-                  height={240}
-                  alt="Lulu Nav"
-                />
-              </div>
-            </div>
-            <div ref={thumbnailRef} className="keen-slider thumbnail">
-              <div className="keen-slider__slide number-slide1">
-                <Image
-                  src="/images/KinEuphorics.png"
-                  width={2000}
-                  height={240}
-                  alt="Kin Euphorics Webpage"
-                />
-              </div>
-              <div className="keen-slider__slide number-slide3">
-                <Image
-                  src="/images/luluPDPAfter.png"
-                  width={2000}
-                  height={240}
-                  alt="Lulu PDP"
-                />
-              </div>
-              <div className="keen-slider__slide number-slide5">
-                <Image
-                  src="/images/luluNavAfter.webp"
-                  width={2000}
-                  height={240}
-                  alt="Lulu Nav"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="MOBILE w-full mb-4 lg:w-1/2 sm:hidden">
-            <div ref={sliderRef} className="keen-slider mb-4">
-              <div className="keen-slider__slide number-slide2">
                 <Image
                   src="/images/KinEuphoricsMobile.png"
+                  className="block sm:hidden"
                   width={750}
                   height={1334}
                   alt="Kin Euphorics Webpage"
                 />
               </div>
-              <div className="keen-slider__slide number-slide4">
+              <div className="keen-slider__slide number-slide2">
+                <Image
+                  src="/images/luluPDPAfter.png"
+                  className="hidden sm:block"
+                  width={2000}
+                  height={240}
+                  alt="Lulu PDP"
+                />
                 <Image
                   src="/images/luluPDPMobile.png"
+                  className="block sm:hidden"
                   width={750}
                   height={1334}
                   alt="Lulu PDP Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide6">
+              <div className="keen-slider__slide number-slide3">
                 <Image
-                  src="/images/luluNavMobile.png"
+                  src="/images/luluNavAfter.webp"
+                  className="hidden sm:block"
                   width={2000}
                   height={240}
+                  alt="Lulu Nav"
+                />
+                <Image
+                  src="/images/luluNavMobile.png"
+                  className="block sm:hidden"
+                  width={750}
+                  height={1334}
                   alt="Lulu Nav Mobile"
                 />
               </div>
             </div>
             <div ref={thumbnailRef} className="keen-slider thumbnail">
-              <div className="keen-slider__slide number-slide2">
+              <div className="keen-slider__slide number-slide1">
                 <Image
-                  src="/images/KinEuphoricsMobile.png"
+                  src="/images/KinEuphorics.png"
+                  className="hidden sm:block"
                   width={2000}
                   height={240}
+                  alt="Kin Euphorics Webpage"
+                />
+                <Image
+                  src="/images/KinEuphoricsMobile.png"
+                  className="block sm:hidden"
+                  width={750}
+                  height={1334}
                   alt="Kin Euphorics Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide4">
+              <div className="keen-slider__slide number-slide2">
                 <Image
-                  src="/images/luluPDPMobile.png"
+                  src="/images/luluPDPAfter.png"
+                  className="hidden sm:block"
                   width={2000}
                   height={240}
+                  alt="Lulu PDP"
+                />
+                <Image
+                  src="/images/luluPDPMobile.png"
+                  className="block sm:hidden"
+                  width={750}
+                  height={1334}
                   alt="Lulu PDP Mobile"
                 />
               </div>
-              <div className="keen-slider__slide number-slide6">
+              <div className="keen-slider__slide number-slide3">
                 <Image
-                  src="/images/luluNavMobile.png"
+                  src="/images/luluNavAfter.webp"
+                  className="hidden sm:block"
                   width={2000}
                   height={240}
+                  alt="Lulu Nav"
+                />
+                <Image
+                  src="/images/luluNavMobile.png"
+                  className="block sm:hidden"
+                  width={750}
+                  height={1334}
                   alt="Lulu Nav Mobile"
                 />
               </div>
