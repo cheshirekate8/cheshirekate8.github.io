@@ -2,9 +2,9 @@ import { Fade } from "react-reveal";
 import Image from "next/image";
 import { FaMap, FaEnvelope, FaPhone } from "react-icons/fa";
 
+// TODO:  Final Checks
+
 export default function SectionTitle({label, blueText, whiteText}) {
-
-
   return (
     <>
         <div className="mt-8 text-2xl uppercase font-bold ease-in-out duration-500 md:text-3xl lg:text-5xl ">

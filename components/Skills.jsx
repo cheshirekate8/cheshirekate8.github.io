@@ -26,6 +26,8 @@ import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
 //TODO: rewrite language copy
+// TODO:  Final Checks
+
 export default function Skills() {
   const iconAndWordArr = [
     {

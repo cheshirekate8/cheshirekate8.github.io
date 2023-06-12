@@ -1,6 +1,11 @@
 import { Fade } from "react-reveal";
 import Image from "next/image";
 
+// TODO:  Copy CAH code
+// TODO:  Get QoS pictures
+// TODO:  Write QoS copy
+// TODO:  Final Checks
+
 export default function QoS() {
   return (
     <Fade>

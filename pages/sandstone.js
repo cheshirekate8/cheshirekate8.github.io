@@ -3,6 +3,9 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
+// TODO:  Restructure to include a title AND timeline in text-area
+// TODO:  Final Checks
+
 export default function Sandstone() {
   function ThumbnailPlugin(mainRef) {
     return (slider) => {

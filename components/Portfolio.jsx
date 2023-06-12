@@ -5,6 +5,8 @@ import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
+// TODO:  Final Checks
+
 export default function Portfolio() {
   const cardArray = [
     {

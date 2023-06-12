@@ -4,6 +4,8 @@ import { SlSocialGithub, SlSocialLinkedin, SlEnvolope } from "react-icons/sl";
 import Link from "next/link";
 import BottomText from "./BottomText";
 
+// TODO:  Final Checks
+
 export default function Splash() {
   const socialLinks = [
     {
