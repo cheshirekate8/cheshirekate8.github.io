@@ -3,8 +3,6 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
-
-// TODO:  get CAH pictures
 // TODO:  write CAH copy
 // TODO:  link to CAH
 // TODO:  Final checks
@@ -109,14 +107,14 @@ export default function CAH() {
             <div ref={sliderRef} className="keen-slider rounded mb-4">
               <div className="keen-slider__slide number-slide1 rounded">
                 <Image
-                  src="/images/KinEuphorics.png"
+                  src="/images/CAHFrontPage.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Kin Euphorics Webpage"
                 />
                 <Image
-                  src="/images/KinEuphoricsMobile.png"
+                  src="/images/CAHFrontPageMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -125,14 +123,14 @@ export default function CAH() {
               </div>
               <div className="keen-slider__slide number-slide2 rounded">
                 <Image
-                  src="/images/luluPDPAfter.png"
+                  src="/images/CAHChoice.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Lulu PDP"
                 />
                 <Image
-                  src="/images/luluPDPMobile.png"
+                  src="/images/CAHChoiceMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -141,14 +139,14 @@ export default function CAH() {
               </div>
               <div className="keen-slider__slide number-slide3 rounded">
                 <Image
-                  src="/images/luluNavAfter.webp"
+                  src="/images/CAHBlackCards.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Lulu Nav"
                 />
                 <Image
-                  src="/images/luluNavMobile.png"
+                  src="/images/CAHBlackCardsMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -159,14 +157,14 @@ export default function CAH() {
             <div ref={thumbnailRef} className="keen-slider rounded thumbnail">
               <div className="keen-slider__slide number-slide1 rounded">
                 <Image
-                  src="/images/KinEuphorics.png"
+                  src="/images/CAHFrontPage.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Kin Euphorics Webpage"
                 />
                 <Image
-                  src="/images/KinEuphoricsMobile.png"
+                  src="/images/CAHFrontPageMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -175,14 +173,14 @@ export default function CAH() {
               </div>
               <div className="keen-slider__slide number-slide2 rounded">
                 <Image
-                  src="/images/luluPDPAfter.png"
+                  src="/images/CAHChoice.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Lulu PDP"
                 />
                 <Image
-                  src="/images/luluPDPMobile.png"
+                  src="/images/CAHChoiceMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -191,14 +189,14 @@ export default function CAH() {
               </div>
               <div className="keen-slider__slide number-slide3 rounded">
                 <Image
-                  src="/images/luluNavAfter.webp"
+                  src="/images/CAHBlackCards.png"
                   className="hidden sm:block"
                   width={2000}
                   height={240}
                   alt="Lulu Nav"
                 />
                 <Image
-                  src="/images/luluNavMobile.png"
+                  src="/images/CAHBlackCardsMobile.png"
                   className="block sm:hidden"
                   width={750}
                   height={1334}
@@ -216,6 +214,24 @@ export default function CAH() {
                 Construction
               </span>
             </div>
+            During my time at Sandstone, there are 3 projects that I am most
+            proud of thus far. Fist was for Lulu and Georgia, where we
+            completely redesigned their Product Display Page and their
+            Navigation bar. Second was for Kin, a brand new client who charged
+            us with building their custom PDP for the Mayfair x Kin collab.
+            Lastly building our internal marketing tool, a fully customizable
+            generative website to help Sandstone connect with clients on a
+            personalized level.
+          
+            During my time at Sandstone, there are 3 projects that I am most
+            proud of thus far. Fist was for Lulu and Georgia, where we
+            completely redesigned their Product Display Page and their
+            Navigation bar. Second was for Kin, a brand new client who charged
+            us with building their custom PDP for the Mayfair x Kin collab.
+            Lastly building our internal marketing tool, a fully customizable
+            generative website to help Sandstone connect with clients on a
+            personalized level.
+
             During my time at Sandstone, there are 3 projects that I am most
             proud of thus far. Fist was for Lulu and Georgia, where we
             completely redesigned their Product Display Page and their
