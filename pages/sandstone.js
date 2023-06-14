@@ -3,9 +3,6 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
-// TODO:  Restructure to include a title AND timeline in text-area
-// TODO:  Final Checks
-
 export default function Sandstone() {
   function ThumbnailPlugin(mainRef) {
     return (slider) => {
@@ -90,10 +87,10 @@ export default function Sandstone() {
   return (
     <Fade>
       <div
-        className="min-h-screen flex flex-col justify-center items-center font-jost lg:text-lg"
+        className="min-h-screen flex flex-col justify-center items-center font-jost lg:text-lg mb-8"
         id="sandstone"
       >
-        <div className="w-5/6 lg:w-full">
+        <div className="w-5/6 lg:w-full text-center mt-10 mx-auto mb-4 lg:mb-10">
           <Image
             src="/images/sandstoneLogo.svg"
             width={750}
@@ -102,19 +99,8 @@ export default function Sandstone() {
             className="mt-20 lg:mt-0 mx-auto mb-4"
           />
         </div>
-        <div className="flex items-center justify-center mb-8">
-          <span className="font-bold px-2 uppercase text-cyan-600 ease-in-out duration-500 text-2xl ">
-            April 2021
-          </span>
-          <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">
-            -
-          </span>
-          <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">
-            Present
-          </span>
-        </div>
-        <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 lg:px-0">
-          <div className="w-full lg:w-1/2">
+        <div className="w-full inline-flex flex-col-reverse lg:block justify-center max-w-7xl">
+          <div className="w-full float-left px-4 lg:pl-0 lg:pr-8 lg:4 lg:w-[50vw] order-1">
             <div ref={sliderRef} className="keen-slider rounded mb-4">
               <div className="keen-slider__slide number-slide1 rounded">
                 <Image
@@ -216,15 +202,57 @@ export default function Sandstone() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/4">
-            During my time at Sandstone, there are 3 projects that I am most
-            proud of thus far. Fist was for Lulu and Georgia, where we
-            completely redesigned their Product Display Page and their
-            Navigation bar. Second was for Kin, a brand new client who charged
-            us with building their custom PDP for the Mayfair x Kin collab.
-            Lastly building our internal marketing tool, a fully customizable
-            generative website to help Sandstone connect with clients on a
-            personalized level.
+          <div className="w-full p-4 lg:p-0">
+            <div className="flex items-center justify-center mb-4">
+              <span className="font-bold px-2 uppercase text-cyan-600 ease-in-out duration-500 text-2xl ">
+                April 2021
+              </span>
+              <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">
+                -
+              </span>
+              <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">
+                Present
+              </span>
+            </div>
+            <div>
+              <p>
+                During my time at Sandstone, one project that I am incredibly
+                proud of is the comprehensive redesign we spearheaded for Lulu
+                and Georgia. Our primary goal was to bring a modern touch to
+                their online presence by revamping the Product Display Page
+                (PDP) and Navigation bar. We approached the redesign with a keen
+                focus on enhancing user experience, ensuring a cleaner and more
+                intuitive flow. By strategically restructuring the content and
+                incorporating captivating animations that responded to user
+                actions, we achieved a seamless browsing experience for
+                visitors. The result was not only a visually stunning
+                transformation but also an elevated platform for users to
+                effortlessly explore Lulu and Georgia's curated product
+                offerings.
+              </p>
+              <br />
+              <p>
+                Another remarkable project I had the privilege to work on was
+                with Kin, a brand-new client, to develop a custom PDP for their
+                exclusive collaboration with Mayfair. Our goal was to create a
+                visually striking and engaging PDP that truly captured the
+                essence of the collaboration. However, before diving into the
+                project, we needed to set up a GitHub repository for Kin as they
+                did not have one in place. This initial setup phase allowed us
+                to establish a streamlined workflow for effective collaboration.
+                As we delved deeper into the project, we encountered a few
+                challenges with the way their products were structured. Some
+                features were configured through code, some through an admin
+                interface, and others through a custom metafields app they
+                utilized. Despite these initial complexities, with the guidance
+                and mentorship of my boss, Andrew, I quickly adapted and found
+                efficient ways to navigate and work with the existing setup.
+                Ultimately, we successfully delivered a custom PDP that
+                showcased the vibrant Mayfair x Kin collaboration, captivating
+                users and driving engagement.
+              </p>
+              <br />
+            </div>
           </div>
         </div>
       </div>

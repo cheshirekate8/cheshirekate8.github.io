@@ -5,7 +5,10 @@ import { useKeenSlider } from "keen-slider/react";
 
 // TODO:  write CAH copy
 // TODO:  link to CAH
+// TODO:  hover links animations
 // TODO:  Final checks
+// TODO:  Update Copy when complete
+// TODO:  Update Copy pictures complete
 
 export default function CAH() {
   function ThumbnailPlugin(mainRef) {
@@ -102,8 +105,8 @@ export default function CAH() {
             Deck Builder
           </div>
         </div>
-        <div className="w-full inline-flex flex-col-reverse lg:flex-row justify-center gap-12 px-4 lg:px-0">
-          <div className="w-full lg:w-1/2">
+        <div className="w-full inline-flex flex-col-reverse lg:block justify-center max-w-7xl">
+          <div className="w-full float-left px-4 lg:pl-0 lg:pr-8 lg:pb-4 lg:w-[50vw]">
             <div ref={sliderRef} className="keen-slider rounded mb-4">
               <div className="keen-slider__slide number-slide1 rounded">
                 <Image
@@ -205,8 +208,8 @@ export default function CAH() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-1/4">
-            <div className="flex items-center justify-center mb-8">
+          <div className="w-full p-4 lg:p-0">
+            <div className="flex items-center justify-center mb-4">
               <span className="font-bold px-2 uppercase text-cyan-600 ease-in-out duration-500 text-2xl ">
                 Under
               </span>
@@ -214,32 +217,18 @@ export default function CAH() {
                 Construction
               </span>
             </div>
-            During my time at Sandstone, there are 3 projects that I am most
-            proud of thus far. Fist was for Lulu and Georgia, where we
-            completely redesigned their Product Display Page and their
-            Navigation bar. Second was for Kin, a brand new client who charged
-            us with building their custom PDP for the Mayfair x Kin collab.
-            Lastly building our internal marketing tool, a fully customizable
-            generative website to help Sandstone connect with clients on a
-            personalized level.
-          
-            During my time at Sandstone, there are 3 projects that I am most
-            proud of thus far. Fist was for Lulu and Georgia, where we
-            completely redesigned their Product Display Page and their
-            Navigation bar. Second was for Kin, a brand new client who charged
-            us with building their custom PDP for the Mayfair x Kin collab.
-            Lastly building our internal marketing tool, a fully customizable
-            generative website to help Sandstone connect with clients on a
-            personalized level.
-
-            During my time at Sandstone, there are 3 projects that I am most
-            proud of thus far. Fist was for Lulu and Georgia, where we
-            completely redesigned their Product Display Page and their
-            Navigation bar. Second was for Kin, a brand new client who charged
-            us with building their custom PDP for the Mayfair x Kin collab.
-            Lastly building our internal marketing tool, a fully customizable
-            generative website to help Sandstone connect with clients on a
-            personalized level.
+            <div>
+              One day while playing around on the internet, I discovered{" "}
+              <a href="https://crhallberg.com/cah/">
+                Chris Halber's JSON Against Humanity Project
+              </a>
+              . It's a collection of every single Cards Against Humanity card
+              ever created, all in one easy to use JSON. It got me so inspired,
+              I decided to create my own Deck Builder using it! It is currently
+              under construction, but soon I plan to implement chosing your own
+              black cards, choosing your own white cards, and exporting your own
+              deck in the same format as JSON Against Humanity. 
+            </div>
           </div>
         </div>
       </div>
