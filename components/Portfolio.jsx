@@ -5,8 +5,7 @@ import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
-// TODO:  Add Work or Personal Subtitle Tags
-// TODO:  Final Checks
+// TODO:  Add Work or Personal Subtitle Tags?
 
 export default function Portfolio() {
   const cardArray = [

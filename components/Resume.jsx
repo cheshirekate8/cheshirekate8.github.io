@@ -4,8 +4,6 @@ import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
-// TODO:  Final Checks
-
 export default function Resume() {
   const [educationToggle, setEducationToggle] = useState(1);
   const [experienceToggle, setExperienceToggle] = useState(1);

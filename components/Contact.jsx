@@ -4,8 +4,6 @@ import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 import Link from "next/link";
 
-// TODO:  Final Checks
-
 export default function Contact() {
   const contactItemArr = [
     {

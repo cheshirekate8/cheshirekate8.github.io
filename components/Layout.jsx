@@ -1,8 +1,6 @@
 import Header from "./Header";
 import Head from "next/head";
 
-// TODO:  Final Checks
-
 const Layout = ({ children }) => {
   return (
     <div className="overflow-hidden	">

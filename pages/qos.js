@@ -1,10 +1,7 @@
 import { Fade } from "react-reveal";
 import Image from "next/image";
 
-// TODO:  Copy CAH code
-// TODO:  Get QoS pictures
-// TODO:  Write QoS copy
-// TODO:  Final Checks
+// TODO:  Come back when QoS2 is done
 
 export default function QoS() {
   return (

@@ -6,7 +6,6 @@ import { useKeenSlider } from "keen-slider/react";
 // TODO:  write CAH copy
 // TODO:  link to CAH
 // TODO:  hover links animations
-// TODO:  Final checks
 // TODO:  Update Copy when complete
 // TODO:  Update Copy pictures complete
 
