@@ -44,10 +44,10 @@ export default function Portfolio() {
     href,
     underConstruction,
   }) => {
-    const linkText = underConstruction ? "Under Construction":"See Project";
+    const linkText = underConstruction ? "🚧 Under Construction 🚧":"See Project";
     return (
       <Link
-        className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${underConstruction ? "hover:cursor-not-allowed":""}`}
+        className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${underConstruction ? "hover:cursor-default":""}`}
         href={`/${href}`}
         onClick={(e) => {
           if (underConstruction === false) return;
@@ -68,11 +68,13 @@ export default function Portfolio() {
           <div className="text-xl font-bold my-2">{projName}</div>
           <div className="my-2">{copy}</div>
           <div
-            className="font-semibold flex ml-4 items-center"
+            className={`font-semibold flex ml-4 items-center ${underConstruction ? "text-orange-300":""}`}
             href={`/${href}`}
           >
             {linkText}
-            <TbArrowRightCircle className={`text-4xl text-cyan-600 ml-4 ease-in-out duration-500 ${underConstruction ? "group-hover:animate-donk":"group-hover:translate-x-4"}`} />
+            <span hidden={underConstruction}>
+              <TbArrowRightCircle className="text-4xl text-cyan-600 ml-4 ease-in-out duration-500 group-hover:translate-x-4" />
+            </span>
           </div>
           <div className="pattern absolute -bottom-5 -right-5 invert w-[120px] h-[120px] opacity-30">
             <Image
