@@ -218,9 +218,9 @@ export default function CAH() {
             <div>
               One day while playing around on the internet, I discovered{" "}
               <a href="https://crhallberg.com/cah/">
-                Chris Halber's JSON Against Humanity Project
+                Chris Halber&apos;s JSON Against Humanity Project
               </a>
-              . It's a collection of every single Cards Against Humanity card
+              . It&apos;s a collection of every single Cards Against Humanity card
               ever created, all in one easy to use JSON. It got me so inspired,
               I decided to create my own Deck Builder using it! It is currently
               under construction, but soon I plan to implement chosing your own

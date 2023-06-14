@@ -227,7 +227,7 @@ export default function Sandstone() {
                 actions, we achieved a seamless browsing experience for
                 visitors. The result was not only a visually stunning
                 transformation but also an elevated platform for users to
-                effortlessly explore Lulu and Georgia's curated product
+                effortlessly explore Lulu and Georgia&apos;s curated product
                 offerings.
               </p>
               <br />
