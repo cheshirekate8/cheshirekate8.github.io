@@ -28,7 +28,7 @@ export default function Portfolio() {
       langs: "React, Tailwind, JSON",
       projName: "CAH Custom Deck Builder",
       copy: "A personal project where a user can create their own custom Cards Against Humanity deck or pack.",
-      href: "cah",
+      href: "cahdb",
       underConstruction: true,
     },
   ];

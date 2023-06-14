@@ -3,11 +3,10 @@ import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
-// TODO:  write CAH copy
-// TODO:  link to CAH
+// TODO:  Complete CAHDB
+// TODO:  write CAHDB copy
+// TODO:  link to CAHDB
 // TODO:  hover links animations
-// TODO:  Update Copy when complete
-// TODO:  Update Copy pictures complete
 
 export default function CAH() {
   function ThumbnailPlugin(mainRef) {
