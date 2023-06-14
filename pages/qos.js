@@ -1,6 +1,8 @@
 import { Fade } from "react-reveal";
 import Image from "next/image";
 
+// TODO:  Come back when QoS2 is done
+
 export default function QoS() {
   return (
     <Fade>

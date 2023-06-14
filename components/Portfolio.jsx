@@ -5,6 +5,8 @@ import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
+// TODO:  Add Work or Personal Subtitle Tags?
+
 export default function Portfolio() {
   const cardArray = [
     {
@@ -16,6 +18,7 @@ export default function Portfolio() {
       projName: "Sandstone",
       copy: "A showcase of my work with Kin, Lulu and Georgia and other internal projects.",
       href: "sandstone",
+      underConstruction: false,
     },
     {
       src: "/images/CAHDeckBuilder.png",
@@ -25,23 +28,32 @@ export default function Portfolio() {
       langs: "React, Tailwind, JSON",
       projName: "CAH Custom Deck Builder",
       copy: "A personal project where a user can create their own custom Cards Against Humanity deck or pack.",
-      href: "cah",
-    },
-    {
-      src: "/images/qos1.webp",
-      alt: "Queen of Sauce Recipe App",
-      width: 3456,
-      height: 1775,
-      langs: "React, Tailwind, JSON",
-      projName: "Queen of Sauce Cooking",
-      copy: "My capstone project for App Academy where I created a cooking app based on the Stardew Valley recipes.",
-      href: "qos",
+      href: "cahdb",
+      underConstruction: true,
     },
   ];
 
-  const Card = ({ src, alt, width, height, langs, projName, copy, href }) => {
+  const Card = ({
+    src,
+    alt,
+    width,
+    height,
+    langs,
+    projName,
+    copy,
+    href,
+    underConstruction,
+  }) => {
+    const linkText = underConstruction ? "Under Construction":"See Project";
     return (
-      <Link className="group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between" href={`/${href}`} >
+      <Link
+        className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${underConstruction ? "hover:cursor-not-allowed":""}`}
+        href={`/${href}`}
+        onClick={(e) => {
+          if (underConstruction === false) return;
+          e.preventDefault();
+        }}
+      >
         <div className="w-full">
           <Image
             src={src}
@@ -59,8 +71,8 @@ export default function Portfolio() {
             className="font-semibold flex ml-4 items-center"
             href={`/${href}`}
           >
-            See Project
-            <TbArrowRightCircle className="text-4xl text-cyan-600 ml-4 group-hover:translate-x-4 ease-in-out duration-500" />
+            {linkText}
+            <TbArrowRightCircle className={`text-4xl text-cyan-600 ml-4 ease-in-out duration-500 ${underConstruction ? "group-hover:animate-donk":"group-hover:translate-x-4"}`} />
           </div>
           <div className="pattern absolute -bottom-5 -right-5 invert w-[120px] h-[120px] opacity-30">
             <Image
@@ -83,7 +95,11 @@ export default function Portfolio() {
         id="portfolio"
       >
         <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
-          <SectionTitle label="Portfolio" blueText="My" whiteText="Projects and Work" />
+          <SectionTitle
+            label="Portfolio"
+            blueText="My"
+            whiteText="Projects and Work"
+          />
           <div className="mb-20 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
             {cardArray.map((card) => (
               <Card
@@ -96,6 +112,7 @@ export default function Portfolio() {
                 copy={card.copy}
                 href={card.href}
                 key={card.alt}
+                underConstruction={card.underConstruction}
               />
             ))}
           </div>

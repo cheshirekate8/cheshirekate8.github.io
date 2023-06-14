@@ -34,9 +34,19 @@ module.exports = {
           '0%': { opacity: "0" },
           '100%': { opacity: "1" },
         },
+        "donk": {
+          '0%': { transform: "translate3d(0, 0, 0)" },
+          '20%': { transform: "translate3d(16px, 0, 0)" },
+          '40%': { transform: "translate3d(6px, 0, 0)" },
+          '60%': { transform: "translate3d(16px, 0, 0)" },
+          '80%': { transform: "translate3d(12px, 0, 0)" },
+          '100%': { transform: "translate3d(16px, 0, 0)" },
+        },
+
       },
       animation: {
         'reveal': 'reveal .25s ease-in-out forwards ',
+        'donk': 'donk .35s ease-in-out forwards ',
       }
     },
   },
