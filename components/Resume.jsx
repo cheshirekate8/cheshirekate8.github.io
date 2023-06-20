@@ -46,7 +46,7 @@ export default function Resume() {
     },
     {
       id: 2,
-      title: "Software Engineer",
+      title: "Software Engineering Intern",
       company: "Dolthub",
       dec: "Increased test coverage by 15% and implemented several changes while collaborating with our graphic designer.",
       startYear: "2021",
