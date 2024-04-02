@@ -87,20 +87,20 @@ export default function Resume() {
             <div className="history-items">
               {experienceData.map((experience) => (
                 <div
-                  className="relative border-r-2 first:border-r-0"
+                  className="relative border-r-2"
                   key={experience.id}
                 >
                   <div
-                    className={`border-b-2 overflow-scroll pr-4 ease-in-out duration-500 ${
+                    className={`border-b-2 pr-4 ease-in-out duration-500 ${
                       experience.id == experienceToggle
-                        ? "h-64 md:h-60"
-                        : "h-20"
+                        ? "h-64 md:h-60 overflow-scroll"
+                        : "h-20 overflow-hidden"
                     }`}
                     data-animate="active"
                   >
                     <h6
-                      className={`text-lg font-bold p-6`}
-                      onClick={() => setExperienceToggle(experience.id)}
+                      className={`text-lg font-bold py-6`}
+                      onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
                     >
                       <span> {experience.title} </span>
                     </h6>
@@ -128,7 +128,7 @@ export default function Resume() {
                   </div>
                   <button
                     className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10 ease-in-out duration-500 transform"
-                    onClick={() => setExperienceToggle(experience.id)}
+                    onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
                   >
                     <AiOutlineMinus
                       className={`ease-in-out duration-200 absolute ${
@@ -159,18 +159,18 @@ export default function Resume() {
             <div className="history-items">
               {educationData.map((education, i) => (
                 <div
-                  className="relative border-r-2 first:border-r-0"
+                  className="relative border-r-2"
                   key={education.id}
                 >
                   <div
-                    className={`border-b-2 overflow-hidden pr-4 ease-in-out duration-500 ${
-                      educationToggle === education.id ? "h-64 md:h-60" : "h-20"
+                    className={`border-b-2 pr-4 ease-in-out duration-500 ${
+                      educationToggle === education.id ? "h-64 md:h-60 overflow-scroll" : "h-20 overflow-hidden"
                     }`}
                     data-animate="active"
                   >
                     <h6
-                      className={`text-lg font-bold px-12 py-6`}
-                      onClick={() => setEducationToggle(education.id)}
+                      className={`text-lg font-bold py-6`}
+                      onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
                     >
                       <span> {education.academy} </span>
                     </h6>
@@ -193,7 +193,7 @@ export default function Resume() {
                   </div>
                   <button
                     className="dot ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
-                    onClick={() => setEducationToggle(education.id)}
+                    onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
                   >
                     <AiOutlineMinus
                       className={`ease-in-out duration-200 absolute  ${

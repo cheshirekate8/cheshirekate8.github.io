@@ -8,7 +8,7 @@ export default function Contact() {
     {
       icon: <FaMap className="text-white" />,
       label: "Location",
-      info: "Los Angeles, CA",
+      info: "Las Vegas, NV",
       href: "",
     },
     {
