@@ -39,7 +39,7 @@ export default function Splash() {
         className="relative pt-28 px-4 flex flex-col min-h-screen xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:pt-0 xl:-top-16 animate-reveal"
         id="splash"
       >
-        <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide -mb-20 xl:mb-0 xl:row-start-1 xl:col-start-1 xl:justify-end">
+        <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide -mb-8 sm:-mb-20 xl:mb-0 xl:row-start-1 xl:col-start-1 xl:justify-end">
           <div className="text-[13px] ease-in-out duration-500 md:text-base font-bold">
             <span className="">Hello, </span>
             <span className="text-cyan-600">my name is</span>
