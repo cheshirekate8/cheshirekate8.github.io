@@ -36,7 +36,7 @@ export default function Splash() {
   ];
   return (
       <div
-        className="relative pt-28 px-4 flex flex-col min-h-screen xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:pt-0 xl:-top-16 animate-reveal"
+        className="relative pt-28 px-4 flex flex-col min-h-screen xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:pt-0 xl:-top-16"
         id="splash"
       >
         <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide -mb-8 sm:-mb-20 xl:mb-0 xl:row-start-1 xl:col-start-1 xl:justify-end">
