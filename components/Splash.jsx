@@ -70,7 +70,7 @@ export default function Splash() {
           <div className="w-[350px] h-[350px] relative mt-28 ease-in-out duration-500 md:w-[500px] md:h-[500px] md:mt-56">
             <div className="bg-cyan-600 rounded-full w-full h-full"></div>
             <Image
-              src="/images/profile1.png"
+              src="/images/profile1.webp"
               alt="<b>Katie</b> Young"
               width={1200}
               height={1200}
