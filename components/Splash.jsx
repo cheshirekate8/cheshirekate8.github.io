@@ -39,7 +39,7 @@ export default function Splash() {
         className="relative pt-28 px-4 flex flex-col min-h-screen xl:grid xl:grid-rows-2 xl:grid-cols-2 xl:pt-0 xl:-top-16 animate-reveal"
         id="splash"
       >
-        <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide xl:row-start-1 xl:col-start-1 xl:justify-end">
+        <div className="uppercase flex flex-col justify-center text-center font-jost tracking-wide -mb-20 xl:mb-0 xl:row-start-1 xl:col-start-1 xl:justify-end">
           <div className="text-[13px] ease-in-out duration-500 md:text-base font-bold">
             <span className="">Hello, </span>
             <span className="text-cyan-600">my name is</span>
@@ -57,7 +57,7 @@ export default function Splash() {
             </span>
           </div>
         </div>
-        <div className="flex relative w-min m-auto mb-16 xl:row-start-1 xl:col-start-2 xl:row-span-2">
+        <div className="flex relative w-min m-auto xl:row-start-1 xl:col-start-2 xl:row-span-2">
           <div className="pattern absolute invert right-3 top-28 opacity-30 w-[130px] h-130px] md:w-[260px] md:h-[260px]">
             <Image src="/images/pat-1.png" width={260} height={260} alt="" priority />
           </div>
@@ -67,13 +67,13 @@ export default function Splash() {
           <div className="pattern absolute bottom-0 -left-12 invert opacity-30 w-[80px] h-[80px] md:w-[160px] md:h-[160px]">
             <Image src="/images/pat-2.png" width={160} height={160} alt="" priority />
           </div>
-          <div className="w-[350px] h-[350px] relative mt-28 ease-in-out duration-500 md:w-[700px] md:h-[700px] md:mt-56">
+          <div className="w-[350px] h-[350px] relative mt-28 ease-in-out duration-500 md:w-[500px] md:h-[500px] md:mt-56">
             <div className="bg-cyan-600 rounded-full w-full h-full"></div>
             <Image
               src="/images/profile1.png"
               alt="<b>Katie</b> Young"
-              width={600}
-              height={600}
+              width={1200}
+              height={1200}
               className="rounded-b-full absolute bottom-0 m-auto"
               priority
             />
