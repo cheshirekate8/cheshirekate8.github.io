@@ -14,10 +14,10 @@ const Header = () => {
       handleVar: "skills",
       label: "Skills",
     },
-    {
-      handleVar: "portfolio",
-      label: "Portfolio",
-    },
+    // {
+    //   handleVar: "portfolio",
+    //   label: "Portfolio",
+    // },
     {
       handleVar: "resume",
       label: "Resume",
