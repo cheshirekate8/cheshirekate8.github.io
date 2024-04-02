@@ -1,7 +1,3 @@
-import { Fade } from "react-reveal";
-import Image from "next/image";
-import { FaMap, FaEnvelope, FaPhone } from "react-icons/fa";
-
 export default function SectionTitle({label, blueText, whiteText}) {
   return (
     <>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Fade } from "react-reveal";
 import { SlSocialGithub, SlSocialLinkedin, SlEnvolope } from "react-icons/sl";
 import Link from "next/link";
 import BottomText from "./BottomText";

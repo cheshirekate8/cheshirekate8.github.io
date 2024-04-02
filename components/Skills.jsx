@@ -1,4 +1,3 @@
-import { Fade } from "react-reveal";
 import {
   SiTypescript,
   SiReact,
@@ -114,44 +113,42 @@ export default function Skills() {
   };
 
   return (
-    <Fade>
-      <div className="relative font-jost " id="skills">
-        <div className="flex flex-col justify-center items-center m-auto xl:min-h-screen">
-          <SectionTitle
-            label="Professional Skills"
-            blueText="My"
-            whiteText="Strongest Languages"
-          />
-          <div className="w-full sm:grid sm:grid-cols-2 xl:grid-cols-3">
-            {skillsComponentArray.map((item) => {
-              return (
-                <SkillComponent
-                  word={item.word}
-                  icon={item.icon}
-                  percent={item.percent}
-                  copy={item.copy}
-                  key={item.word}
-                />
-              );
-            })}
-            <div className="mx-4 mb-16 text-center sm:col-span-2 xl:mx-16">
-              <div className="text-2xl font-caveat mb-2">Familiar with:</div>
-              <div className="" style={{ columnCount: 3 }}>
-                {iconAndWordArr.map((item) => {
-                  return (
-                    <IconAndWord
-                      icon={item.icon}
-                      word={item.word}
-                      key={item.word}
-                    />
-                  );
-                })}
-              </div>
+    <div className="relative font-jost " id="skills">
+      <div className="flex flex-col justify-center items-center m-auto xl:min-h-screen">
+        <SectionTitle
+          label="Professional Skills"
+          blueText="My"
+          whiteText="Strongest Languages"
+        />
+        <div className="w-full sm:grid sm:grid-cols-2 xl:grid-cols-3">
+          {skillsComponentArray.map((item) => {
+            return (
+              <SkillComponent
+                word={item.word}
+                icon={item.icon}
+                percent={item.percent}
+                copy={item.copy}
+                key={item.word}
+              />
+            );
+          })}
+          <div className="mx-4 mb-16 text-center sm:col-span-2 xl:mx-16">
+            <div className="text-2xl font-caveat mb-2">Familiar with:</div>
+            <div className="" style={{ columnCount: 3 }}>
+              {iconAndWordArr.map((item) => {
+                return (
+                  <IconAndWord
+                    icon={item.icon}
+                    word={item.word}
+                    key={item.word}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
-        <BottomText label="Skills" />
       </div>
-    </Fade>
+      <BottomText label="Skills" />
+    </div>
   );
 }

@@ -1,4 +1,3 @@
-import { Fade } from "react-reveal";
 import { FaMap, FaEnvelope, FaPhone } from "react-icons/fa";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
@@ -23,13 +22,17 @@ export default function Contact() {
       label: "Phone",
       info: "937-239-2748",
       href: "tel:+19372392748",
-
     },
   ];
 
   const ContactItem = ({ icon, label, info, href }) => {
     return (
-      <Link className={`flex m-8 text-left group ${href ? "pointer-events-auto":"pointer-events-none"}`} href={href}>
+      <Link
+        className={`flex m-8 text-left group ${
+          href ? "pointer-events-auto" : "pointer-events-none"
+        }`}
+        href={href}
+      >
         <div className="flex items-center">
           <div className="dot w-14 h-14 border-2 border-white rounded-full drop-shadow-hard bg-cyan-600 group-hover:bg-sky-900 ease-in-out duration-200 flex justify-center items-center">
             {icon}
@@ -45,25 +48,23 @@ export default function Contact() {
   };
 
   return (
-    <Fade>
-      <div
-        className="min-h-screen flex flex-col justify-center items-center relative font-jost overflow-hidden"
-        id="contact"
-      >
-        <SectionTitle label="Contact Me" blueText="Let's" whiteText="Talk" />
-        <div className="contacts-container">
-          {contactItemArr.map((item) => (
-            <ContactItem
-              icon={item.icon}
-              label={item.label}
-              info={item.info}
-              href={item.href}
-              key={item.label}
-            />
-          ))}
-        </div>
-        <BottomText label="Contact Me" last={true} />
+    <div
+      className="min-h-screen flex flex-col justify-center items-center relative font-jost overflow-hidden"
+      id="contact"
+    >
+      <SectionTitle label="Contact Me" blueText="Let's" whiteText="Talk" />
+      <div className="contacts-container">
+        {contactItemArr.map((item) => (
+          <ContactItem
+            icon={item.icon}
+            label={item.label}
+            info={item.info}
+            href={item.href}
+            key={item.label}
+          />
+        ))}
       </div>
-    </Fade>
+      <BottomText label="Contact Me" last={true} />
+    </div>
   );
 }

@@ -1,4 +1,3 @@
-import { Fade } from "react-reveal";
 import { useState } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import SectionTitle from "./SectionTitle";
@@ -71,158 +70,154 @@ export default function Resume() {
   ];
 
   return (
-    <Fade>
-      <div
-        className="min-h-screen flex flex-col justify-center items-center relative font-jost"
-        id="resume"
-      >
-        <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
-          <SectionTitle label="Resume" blueText="My" whiteText="Story" />
-          <div className="flex flex-wrap">
-            <div className="w-full md:w-1/2 px-5 pb-16">
-              <h5
-                className="text-2xl font-bold pb-8 text-center border-b-2 border-b-white"
-                data-animate="active"
-              >
-                <span> Experience </span>
-              </h5>
-              <div className="history-items">
-                {experienceData.map((experience) => (
+    <div
+      className="min-h-screen flex flex-col justify-center items-center relative font-jost"
+      id="resume"
+    >
+      <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
+        <SectionTitle label="Resume" blueText="My" whiteText="Story" />
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 px-5 pb-16">
+            <h5
+              className="text-2xl font-bold pb-8 text-center border-b-2 border-b-white"
+              data-animate="active"
+            >
+              <span> Experience </span>
+            </h5>
+            <div className="history-items">
+              {experienceData.map((experience) => (
+                <div
+                  className="relative border-r-2 first:border-r-0"
+                  key={experience.id}
+                >
                   <div
-                    className="relative border-r-2 first:border-r-0"
-                    key={experience.id}
+                    className={`border-b-2 overflow-scroll pr-4 ease-in-out duration-500 ${
+                      experience.id == experienceToggle
+                        ? "h-64 md:h-60"
+                        : "h-20"
+                    }`}
+                    data-animate="active"
                   >
-                    <div
-                      className={`border-b-2 overflow-scroll pr-4 ease-in-out duration-500 ${
-                        experience.id == experienceToggle
-                          ? "h-64 md:h-60"
-                          : "h-20"
-                      }`}
-                      data-animate="active"
-                    >
-                      <h6
-                        className={`text-lg font-bold p-6`}
-                        onClick={() => setExperienceToggle(experience.id)}
-                      >
-                        <span> {experience.title} </span>
-                      </h6>
-                      <div className="history-content">
-                        <div className="font-caveat text-2xl">
-                          <span> {experience.company} </span>
-                        </div>
-                        <div className="pb-4 font-semibold">
-                          <span>
-                            {" "}
-                            {experience.startYear} -{" "}
-                            {experience.endYear ? (
-                              experience.endYear
-                            ) : (
-                              <b>Present</b>
-                            )}
-                          </span>
-                        </div>
-                        <div className="pb-8">
-                          <div>
-                            <p>{experience.dec}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button
-                      className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10 ease-in-out duration-500 transform"
+                    <h6
+                      className={`text-lg font-bold p-6`}
                       onClick={() => setExperienceToggle(experience.id)}
                     >
-                      <AiOutlineMinus
-                        className={`ease-in-out duration-200 absolute ${
-                          experience.id == experienceToggle
-                            ? "opacity-100"
-                            : "opacity-0"
-                        }`}
-                      />
-                      <AiOutlinePlus
-                        className={`ease-in-out duration-200 absolute ${
-                          experience.id == experienceToggle
-                            ? "opacity-0"
-                            : "opacity-100"
-                        }`}
-                      />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 px-5 pb-16">
-              <h5
-                className="text-2xl font-bold pb-8 text-center border-b-2"
-                data-animate="active"
-              >
-                <span> Education </span>
-              </h5>
-              <div className="history-items">
-                {educationData.map((education, i) => (
-                  <div
-                    className="relative border-r-2 first:border-r-0"
-                    key={education.id}
-                  >
-                    <div
-                      className={`border-b-2 overflow-hidden pr-4 ease-in-out duration-500 ${
-                        educationToggle === education.id
-                          ? "h-64 md:h-60"
-                          : "h-20"
-                      }`}
-                      data-animate="active"
-                    >
-                      <h6
-                        className={`text-lg font-bold px-12 py-6`}
-                        onClick={() => setEducationToggle(education.id)}
-                      >
-                        <span> {education.academy} </span>
-                      </h6>
-                      <div className="history-content">
-                        <div className="font-caveat text-2xl">
-                          <span> {education.title} </span>
-                        </div>
-                        <div className="pb-4 font-semibold">
-                          <span>
-                            {" "}
-                            {education.startYear} - {education.endYear}{" "}
-                          </span>
-                        </div>
-                        <div className="pb-8">
-                          <div>
-                            <p>{education.dec}</p>
-                          </div>
+                      <span> {experience.title} </span>
+                    </h6>
+                    <div className="history-content">
+                      <div className="font-caveat text-2xl">
+                        <span> {experience.company} </span>
+                      </div>
+                      <div className="pb-4 font-semibold">
+                        <span>
+                          {" "}
+                          {experience.startYear} -{" "}
+                          {experience.endYear ? (
+                            experience.endYear
+                          ) : (
+                            <b>Present</b>
+                          )}
+                        </span>
+                      </div>
+                      <div className="pb-8">
+                        <div>
+                          <p>{experience.dec}</p>
                         </div>
                       </div>
                     </div>
-                    <button
-                      className="dot ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
+                  </div>
+                  <button
+                    className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10 ease-in-out duration-500 transform"
+                    onClick={() => setExperienceToggle(experience.id)}
+                  >
+                    <AiOutlineMinus
+                      className={`ease-in-out duration-200 absolute ${
+                        experience.id == experienceToggle
+                          ? "opacity-100"
+                          : "opacity-0"
+                      }`}
+                    />
+                    <AiOutlinePlus
+                      className={`ease-in-out duration-200 absolute ${
+                        experience.id == experienceToggle
+                          ? "opacity-0"
+                          : "opacity-100"
+                      }`}
+                    />
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 px-5 pb-16">
+            <h5
+              className="text-2xl font-bold pb-8 text-center border-b-2"
+              data-animate="active"
+            >
+              <span> Education </span>
+            </h5>
+            <div className="history-items">
+              {educationData.map((education, i) => (
+                <div
+                  className="relative border-r-2 first:border-r-0"
+                  key={education.id}
+                >
+                  <div
+                    className={`border-b-2 overflow-hidden pr-4 ease-in-out duration-500 ${
+                      educationToggle === education.id ? "h-64 md:h-60" : "h-20"
+                    }`}
+                    data-animate="active"
+                  >
+                    <h6
+                      className={`text-lg font-bold px-12 py-6`}
                       onClick={() => setEducationToggle(education.id)}
                     >
-                      <AiOutlineMinus
-                        className={`ease-in-out duration-200 absolute  ${
-                          education.id == educationToggle
-                            ? "opacity-100"
-                            : "opacity-0"
-                        }`}
-                      />
-                      <AiOutlinePlus
-                        className={`ease-in-out duration-200 absolute ${
-                          education.id == educationToggle
-                            ? "opacity-0"
-                            : "opacity-100"
-                        }`}
-                      />
-                    </button>
+                      <span> {education.academy} </span>
+                    </h6>
+                    <div className="history-content">
+                      <div className="font-caveat text-2xl">
+                        <span> {education.title} </span>
+                      </div>
+                      <div className="pb-4 font-semibold">
+                        <span>
+                          {" "}
+                          {education.startYear} - {education.endYear}{" "}
+                        </span>
+                      </div>
+                      <div className="pb-8">
+                        <div>
+                          <p>{education.dec}</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                ))}
-              </div>
+                  <button
+                    className="dot ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
+                    onClick={() => setEducationToggle(education.id)}
+                  >
+                    <AiOutlineMinus
+                      className={`ease-in-out duration-200 absolute  ${
+                        education.id == educationToggle
+                          ? "opacity-100"
+                          : "opacity-0"
+                      }`}
+                    />
+                    <AiOutlinePlus
+                      className={`ease-in-out duration-200 absolute ${
+                        education.id == educationToggle
+                          ? "opacity-0"
+                          : "opacity-100"
+                      }`}
+                    />
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-        {/*  */}
-        <BottomText label="History" />
       </div>
-    </Fade>
+      {/*  */}
+      <BottomText label="History" />
+    </div>
   );
 }

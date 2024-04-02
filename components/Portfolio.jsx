@@ -1,4 +1,3 @@
-import { Fade } from "react-reveal";
 import Image from "next/image";
 import { TbArrowRightCircle } from "react-icons/tb";
 import Link from "next/link";
@@ -44,10 +43,14 @@ export default function Portfolio() {
     href,
     underConstruction,
   }) => {
-    const linkText = underConstruction ? "🚧 Under Construction 🚧":"See Project";
+    const linkText = underConstruction
+      ? "🚧 Under Construction 🚧"
+      : "See Project";
     return (
       <Link
-        className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${underConstruction ? "hover:cursor-default":""}`}
+        className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${
+          underConstruction ? "hover:cursor-default" : ""
+        }`}
         href={`/${href}`}
         onClick={(e) => {
           if (underConstruction === false) return;
@@ -68,7 +71,9 @@ export default function Portfolio() {
           <div className="text-xl font-bold my-2">{projName}</div>
           <div className="my-2">{copy}</div>
           <div
-            className={`font-semibold flex ml-4 items-center ${underConstruction ? "text-orange-300":""}`}
+            className={`font-semibold flex ml-4 items-center ${
+              underConstruction ? "text-orange-300" : ""
+            }`}
             href={`/${href}`}
           >
             {linkText}
@@ -91,36 +96,34 @@ export default function Portfolio() {
   };
 
   return (
-    <Fade>
-      <div
-        className="relative font-jost m-8 min-h-screen flex justify-center"
-        id="portfolio"
-      >
-        <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
-          <SectionTitle
-            label="Portfolio"
-            blueText="My"
-            whiteText="Projects and Work"
-          />
-          <div className="mb-20 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-            {cardArray.map((card) => (
-              <Card
-                src={card.src}
-                alt={card.alt}
-                width={card.width}
-                height={card.height}
-                langs={card.langs}
-                projName={card.projName}
-                copy={card.copy}
-                href={card.href}
-                key={card.alt}
-                underConstruction={card.underConstruction}
-              />
-            ))}
-          </div>
+    <div
+      className="relative font-jost m-8 min-h-screen flex justify-center"
+      id="portfolio"
+    >
+      <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
+        <SectionTitle
+          label="Portfolio"
+          blueText="My"
+          whiteText="Projects and Work"
+        />
+        <div className="mb-20 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          {cardArray.map((card) => (
+            <Card
+              src={card.src}
+              alt={card.alt}
+              width={card.width}
+              height={card.height}
+              langs={card.langs}
+              projName={card.projName}
+              copy={card.copy}
+              href={card.href}
+              key={card.alt}
+              underConstruction={card.underConstruction}
+            />
+          ))}
         </div>
-        <BottomText label="Projects" />
       </div>
-    </Fade>
+      <BottomText label="Projects" />
+    </div>
   );
 }
