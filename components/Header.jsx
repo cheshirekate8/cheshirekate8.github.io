@@ -46,7 +46,8 @@ const Header = () => {
     <div className={last ? "my-24" : "my-8"}>
       <button
         onClick={() => handleClick(handleVar)}
-        className="uppercase relative ease-in-out duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:drop-shadow-hard hover:text-cyan-600"
+        className="uppercase relative ease-in-out duration-200 hover:-translate-y-1 hover:-translate-x-1 hover:drop-shadow-hard hover:text-cyan-500"
+        aria-label={label}
       >
         {label}
       </button>
@@ -105,7 +106,7 @@ const Header = () => {
         }}
         className={`flex text-4xl items-center cursor-pointer fixed right-10 top-6 ease-in-out duration-1000 
             ${noTouch ? "pointer-events-none	" : "pointer-events-auto"}
-            ${showSidebar ? "text-sky-100" : "text-cyan-600"}`}
+            ${showSidebar ? "text-sky-100" : "text-cyan-500"}`}
       />
     </div>
   );

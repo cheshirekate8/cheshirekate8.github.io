@@ -67,7 +67,7 @@ export default function Portfolio() {
           />
         </div>
         <div>
-          <div className="text-cyan-600 font-semibold my-2">{langs}</div>
+          <div className="text-cyan-500 font-semibold my-2">{langs}</div>
           <div className="text-xl font-bold my-2">{projName}</div>
           <div className="my-2">{copy}</div>
           <div
@@ -78,7 +78,7 @@ export default function Portfolio() {
           >
             {linkText}
             <span hidden={underConstruction}>
-              <TbArrowRightCircle className="text-4xl text-cyan-600 ml-4 ease-in-out duration-500 group-hover:translate-x-4" />
+              <TbArrowRightCircle className="text-4xl text-cyan-500 ml-4 ease-in-out duration-500 group-hover:translate-x-4" />
             </span>
           </div>
           <div className="pattern absolute -bottom-5 -right-5 invert w-[120px] h-[120px] opacity-30">

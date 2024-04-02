@@ -1,6 +1,4 @@
-import Header from "./Header";
 import Head from "next/head";
-
 const Layout = ({ children }) => {
   return (
     <div className="overflow-hidden	">
@@ -26,7 +24,9 @@ const Layout = ({ children }) => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <main className="mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">{children}</main>
+      <main className="mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+        {children}
+      </main>
     </div>
   );
 };

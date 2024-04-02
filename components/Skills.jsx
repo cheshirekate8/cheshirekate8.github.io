@@ -28,52 +28,52 @@ import BottomText from "./BottomText";
 export default function Skills() {
   const iconAndWordArr = [
     {
-      icon: <SiTypescript className="text-cyan-600 mr-2" />,
+      icon: <SiTypescript className="text-cyan-500 mr-2" />,
       word: "Typescript",
     },
-    { icon: <SiRedux className="text-cyan-600 mr-2" />, word: "Redux" },
-    { icon: <SiCss3 className="text-cyan-600 mr-2" />, word: "CSS3" },
-    { icon: <SiNodedotjs className="text-cyan-600 mr-2" />, word: "Node.js" },
-    { icon: <SiHtml5 className="text-cyan-600 mr-2" />, word: "HTML5" },
-    { icon: <SiJest className="text-cyan-600 mr-2" />, word: "Jest" },
-    { icon: <SiCypress className="text-cyan-600 mr-2" />, word: "Cypress" },
-    { icon: <SiSequelize className="text-cyan-600 mr-2" />, word: "Sequelize" },
-    { icon: <SiGraphql className="text-cyan-600 mr-2" />, word: "GraphQL" },
-    { icon: <SiGoland className="text-cyan-600 mr-2" />, word: "Goland" },
+    { icon: <SiRedux className="text-cyan-500 mr-2" />, word: "Redux" },
+    { icon: <SiCss3 className="text-cyan-500 mr-2" />, word: "CSS3" },
+    { icon: <SiNodedotjs className="text-cyan-500 mr-2" />, word: "Node.js" },
+    { icon: <SiHtml5 className="text-cyan-500 mr-2" />, word: "HTML5" },
+    { icon: <SiJest className="text-cyan-500 mr-2" />, word: "Jest" },
+    { icon: <SiCypress className="text-cyan-500 mr-2" />, word: "Cypress" },
+    { icon: <SiSequelize className="text-cyan-500 mr-2" />, word: "Sequelize" },
+    { icon: <SiGraphql className="text-cyan-500 mr-2" />, word: "GraphQL" },
+    { icon: <SiGoland className="text-cyan-500 mr-2" />, word: "Goland" },
     {
-      icon: <SiPostgresql className="text-cyan-600 mr-2" />,
+      icon: <SiPostgresql className="text-cyan-500 mr-2" />,
       word: "PostgreSQL",
     },
-    { icon: <SiExpress className="text-cyan-600 mr-2" />, word: "Express" },
-    { icon: <SiGit className="text-cyan-600 mr-2" />, word: "Git" },
-    { icon: <SiGithub className="text-cyan-600 mr-2" />, word: "GitHub" },
-    { icon: <SiEslint className="text-cyan-600 mr-2" />, word: "ESLint" },
-    { icon: <SiHeroku className="text-cyan-600 mr-2" />, word: "Heroku" },
-    { icon: <SiVercel className="text-cyan-600 mr-2" />, word: "Vercel" },
+    { icon: <SiExpress className="text-cyan-500 mr-2" />, word: "Express" },
+    { icon: <SiGit className="text-cyan-500 mr-2" />, word: "Git" },
+    { icon: <SiGithub className="text-cyan-500 mr-2" />, word: "GitHub" },
+    { icon: <SiEslint className="text-cyan-500 mr-2" />, word: "ESLint" },
+    { icon: <SiHeroku className="text-cyan-500 mr-2" />, word: "Heroku" },
+    { icon: <SiVercel className="text-cyan-500 mr-2" />, word: "Vercel" },
   ];
 
   const skillsComponentArray = [
     {
       word: "Javascript",
-      icon: <SiJavascript className="text-cyan-600 mr-2" />,
+      icon: <SiJavascript className="text-cyan-500 mr-2" />,
       percent: 90,
       copy: "2+ years of experience, one of my base languages. Used at Dolthub, Sandstone, and in personal projects",
     },
     {
       word: "React",
-      icon: <SiReact className="text-cyan-600 mr-2" />,
+      icon: <SiReact className="text-cyan-500 mr-2" />,
       percent: 90,
       copy: "2+ years of experience, one of my base languages. Used at Dolthub, Sandstone, and in personal projects",
     },
     {
       word: "Tailwind & CSS",
-      icon: <SiTailwindcss className="text-cyan-600 mr-2" />,
+      icon: <SiTailwindcss className="text-cyan-500 mr-2" />,
       percent: 85,
       copy: "2+ years of experience, one of my base languages. Used at Dolthub, Sandstone, and in personal projects",
     },
     {
       word: "Shopify & Liquid",
-      icon: <SiShopify className="text-cyan-600 mr-2" />,
+      icon: <SiShopify className="text-cyan-500 mr-2" />,
       percent: 70,
       copy: "1 year of experience, used at Sandstone. Previous clients include Google, Lulu and Georgia, and Kin Euphorics.",
     },
@@ -95,14 +95,14 @@ export default function Skills() {
           <IconAndWord icon={icon} word={word} />
           <span>
             <span>{percent}</span>
-            <span className="text-cyan-600">%</span>
+            <span className="text-cyan-500">%</span>
           </span>
         </div>
         <div className="mx-4 mb-8 h-28">{copy}</div>
         <div className="my-4">
           <div className="gray-line border-b-2"></div>
           <div
-            className="colored-line relative flex justify-end border-b-2 border-cyan-600 -top-0.5"
+            className="colored-line relative flex justify-end border-b-2 border-cyan-500 -top-0.5"
             style={{ width: `${percent}%` }}
           >
             <div className="dot w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 absolute -bottom-4 -right-4 flex justify-center items-center"></div>

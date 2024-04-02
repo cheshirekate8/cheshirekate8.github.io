@@ -129,6 +129,7 @@ export default function Resume() {
                   <button
                     className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20 ease-in-out duration-500 transform"
                     onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
+                    aria-label="Expand section"
                   >
                     <AiOutlineMinus
                       className={`ease-in-out duration-200 absolute ${
@@ -194,6 +195,7 @@ export default function Resume() {
                   <button
                     className="dot ease-in-out duration-500 transform text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20"
                     onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
+                    aria-label="Expand section"
                   >
                     <AiOutlineMinus
                       className={`ease-in-out duration-200 absolute  ${

@@ -94,7 +94,7 @@ export default function CAH() {
       id="sandstone"
     >
       <div className="w-5/6 lg:w-full text-center mt-10 mx-auto mb-4 lg:mb-10">
-        <div className="font-bold px-2 uppercase text-cyan-600 text-7xl ease-in-out duration-500">
+        <div className="font-bold px-2 uppercase text-cyan-500 text-7xl ease-in-out duration-500">
           Cards Against Humanity
         </div>
         <div className="font-caveat px-2 capitalize text-6xl ease-in-out duration-500">
@@ -206,7 +206,7 @@ export default function CAH() {
         </div>
         <div className="w-full p-4 lg:p-0">
           <div className="flex items-center justify-center mb-4">
-            <span className="font-bold px-2 uppercase text-cyan-600 ease-in-out duration-500 text-2xl ">
+            <span className="font-bold px-2 uppercase text-cyan-500 ease-in-out duration-500 text-2xl ">
               Under
             </span>
             <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">

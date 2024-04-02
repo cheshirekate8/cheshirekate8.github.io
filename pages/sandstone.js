@@ -203,7 +203,7 @@ export default function Sandstone() {
         </div>
         <div className="w-full p-4 lg:p-0">
           <div className="flex items-center justify-center mb-4">
-            <span className="font-bold px-2 uppercase text-cyan-600 ease-in-out duration-500 text-2xl ">
+            <span className="font-bold px-2 uppercase text-cyan-500 ease-in-out duration-500 text-2xl ">
               April 2021
             </span>
             <span className="font-caveat px-2 capitalize ease-in-out duration-500 text-3xl">
