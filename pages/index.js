@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div>
       <Splash />
-      <Skills />
-      <Portfolio />
       <Resume />
+      <Skills />
+      {/* <Portfolio /> */}
       <Contact />
     </div>
   );

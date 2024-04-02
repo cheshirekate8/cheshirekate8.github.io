@@ -38,14 +38,22 @@ export default function Resume() {
   const experienceData = [
     {
       id: 1,
-      title: "Web Developer",
-      company: "Sandstone",
-      dec: "Worked with Shopify clients such as Google, Lulu and Georgia, and Kin Euphorics, and built internal marketing tools.",
-      startYear: "2022",
+      title: "Lead Shopify Developer",
+      company: "Art Brand Studios",
+      dec: "Developed and maintained their 3 brand stores; Thomas Kinkade Studios, Wild Wings, and Art Brand Studios wholesale.",
+      startYear: "2023",
       endYear: false,
     },
     {
       id: 2,
+      title: "Web Developer",
+      company: "Sandstone",
+      dec: "Worked with Shopify clients such as Google, Lulu and Georgia, and Kin Euphorics, and built internal marketing tools.",
+      startYear: "2022",
+      endYear: "2023",
+    },
+    {
+      id: 3,
       title: "Software Engineering Intern",
       company: "Dolthub",
       dec: "Increased test coverage by 15% and implemented several changes while collaborating with our graphic designer.",
@@ -53,7 +61,7 @@ export default function Resume() {
       endYear: "2022",
     },
     {
-      id: 3,
+      id: 4,
       title: "Software Engineering Assistant",
       company: "App Academy",
       dec: "As a recent grad, mentored and collaborated with job-seeking students to better prepare them for the job search.",
@@ -85,7 +93,7 @@ export default function Resume() {
                     key={experience.id}
                   >
                     <div
-                      className={`border-b-2 overflow-hidden pr-4 ease-in-out duration-500 ${
+                      className={`border-b-2 overflow-scroll pr-4 ease-in-out duration-500 ${
                         experience.id == experienceToggle
                           ? "h-64 md:h-60"
                           : "h-20"
