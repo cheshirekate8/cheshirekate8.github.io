@@ -21,16 +21,12 @@ export default function Resume() {
       title: "B.A. of Theatre",
       academy: "Florida State University",
       dec: "Comprehensive study of the theatrical arts including acting, directing, stage production, and theoretical analysis of theatrical works.",
-      startYear: "2009",
-      endYear: "2012",
     },
     {
       id: 3,
       title: "High School",
       academy: "Miami Palmetto High",
       dec: "Why include my high school? Cause Jeff Bezos went here too, and it's a great conversation starter.",
-      startYear: "2004",
-      endYear: "2008",
     },
   ];
 
@@ -86,10 +82,7 @@ export default function Resume() {
             </h5>
             <div className="history-items">
               {experienceData.map((experience) => (
-                <div
-                  className="relative border-r-2"
-                  key={experience.id}
-                >
+                <div className="relative border-r-2" key={experience.id}>
                   <div
                     className={`border-b-2 pr-4 ease-in-out duration-500 ${
                       experience.id == experienceToggle
@@ -100,7 +93,11 @@ export default function Resume() {
                   >
                     <h6
                       className={`text-lg font-bold py-6`}
-                      onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
+                      onClick={() => {
+                        experience.id === experienceToggle
+                          ? setExperienceToggle(null)
+                          : setExperienceToggle(experience.id);
+                      }}
                     >
                       <span> {experience.title} </span>
                     </h6>
@@ -128,7 +125,11 @@ export default function Resume() {
                   </div>
                   <button
                     className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20 ease-in-out duration-500 transform"
-                    onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
+                    onClick={() => {
+                      experience.id === experienceToggle
+                        ? setExperienceToggle(null)
+                        : setExperienceToggle(experience.id);
+                    }}
                     aria-label="Expand section"
                   >
                     <AiOutlineMinus
@@ -159,19 +160,22 @@ export default function Resume() {
             </h5>
             <div className="history-items">
               {educationData.map((education, i) => (
-                <div
-                  className="relative border-r-2"
-                  key={education.id}
-                >
+                <div className="relative border-r-2" key={education.id}>
                   <div
                     className={`border-b-2 pr-4 ease-in-out duration-500 ${
-                      educationToggle === education.id ? "h-64 md:h-60 overflow-scroll" : "h-20 overflow-hidden"
+                      educationToggle === education.id
+                        ? "h-64 md:h-60 overflow-scroll"
+                        : "h-20 overflow-hidden"
                     }`}
                     data-animate="active"
                   >
                     <h6
                       className={`text-lg font-bold py-6`}
-                      onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
+                      onClick={() => {
+                        education.id === educationToggle
+                          ? setEducationToggle(null)
+                          : setEducationToggle(education.id);
+                      }}
                     >
                       <span> {education.academy} </span>
                     </h6>
@@ -180,10 +184,12 @@ export default function Resume() {
                         <span> {education.title} </span>
                       </div>
                       <div className="pb-4 font-semibold">
-                        <span>
-                          {" "}
-                          {education.startYear} - {education.endYear}{" "}
-                        </span>
+                        {education.startYear ? (
+                          <span>
+                            {" "}
+                            {education.startYear} - {education.endYear}{" "}
+                          </span>
+                        ) : null}
                       </div>
                       <div className="pb-8">
                         <div>
@@ -194,7 +200,11 @@ export default function Resume() {
                   </div>
                   <button
                     className="dot ease-in-out duration-500 transform text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20"
-                    onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
+                    onClick={() => {
+                      education.id === educationToggle
+                        ? setEducationToggle(null)
+                        : setEducationToggle(education.id);
+                    }}
                     aria-label="Expand section"
                   >
                     <AiOutlineMinus
