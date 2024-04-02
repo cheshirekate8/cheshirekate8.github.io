@@ -72,8 +72,8 @@ export default function Splash() {
             <Image
               src="/images/profile1.png"
               alt="<b>Katie</b> Young"
-              width={1200}
-              height={1200}
+              width={600}
+              height={600}
               className="rounded-b-full absolute bottom-0 m-auto"
               priority
             />
