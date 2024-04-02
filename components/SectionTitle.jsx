@@ -1,7 +1,7 @@
 export default function SectionTitle({label, blueText, whiteText}) {
   return (
     <>
-        <div className="mt-8 text-2xl uppercase font-bold ease-in-out duration-500 md:text-3xl lg:text-5xl ">
+        <div className="mt-8 text-2xl uppercase font-bold ease-in-out duration-500 md:text-3xl lg:text-5xl z-10">
           {label}
         </div>
         <div className="flex items-center justify-center mb-8">

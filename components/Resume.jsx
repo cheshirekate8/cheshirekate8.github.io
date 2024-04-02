@@ -71,7 +71,7 @@ export default function Resume() {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center relative font-jost"
+      className="min-h-screen flex flex-col justify-center items-center relative font-jost z-10"
       id="resume"
     >
       <div className="flex flex-col justify-center items-center max-w-7xl m-auto">
@@ -127,7 +127,7 @@ export default function Resume() {
                     </div>
                   </div>
                   <button
-                    className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10 ease-in-out duration-500 transform"
+                    className="dot text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20 ease-in-out duration-500 transform"
                     onClick={() => {experience.id === experienceToggle ? setExperienceToggle(null) : setExperienceToggle(experience.id)}}
                   >
                     <AiOutlineMinus
@@ -192,7 +192,7 @@ export default function Resume() {
                     </div>
                   </div>
                   <button
-                    className="dot ease-in-out duration-500 text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-10"
+                    className="dot ease-in-out duration-500 transform text-xl w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 hover:bg-sky-300 absolute -bottom-4 -right-4 text-black flex justify-center items-center z-20"
                     onClick={() => {education.id === educationToggle ? setEducationToggle(null) : setEducationToggle(education.id)}}
                   >
                     <AiOutlineMinus

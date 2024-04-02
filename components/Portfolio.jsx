@@ -97,7 +97,7 @@ export default function Portfolio() {
 
   return (
     <div
-      className="relative font-jost m-8 min-h-screen flex justify-center"
+      className="relative font-jost m-8 min-h-screen flex justify-center z-10"
       id="portfolio"
     >
       <div className="flex flex-col justify-center items-center max-w-7xl m-auto">

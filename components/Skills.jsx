@@ -113,7 +113,7 @@ export default function Skills() {
   };
 
   return (
-    <div className="relative font-jost " id="skills">
+    <div className="relative font-jost z-10" id="skills">
       <div className="flex flex-col justify-center items-center m-auto xl:min-h-screen">
         <SectionTitle
           label="Professional Skills"

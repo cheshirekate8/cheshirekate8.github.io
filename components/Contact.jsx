@@ -49,7 +49,7 @@ export default function Contact() {
 
   return (
     <div
-      className="min-h-screen flex flex-col justify-center items-center relative font-jost overflow-hidden"
+      className="min-h-screen flex flex-col justify-center items-center relative font-jost z-10"
       id="contact"
     >
       <SectionTitle label="Contact Me" blueText="Let's" whiteText="Talk" />
