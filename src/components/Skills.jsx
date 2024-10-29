@@ -22,7 +22,6 @@ import {
   SiVercel,
 } from "react-icons/si";
 import SectionTitle from "./SectionTitle";
-import BottomText from "./BottomText";
 
 //TODO: rewrite language copy
 export default function Skills() {
@@ -148,7 +147,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-      <BottomText label="Skills" />
     </div>
   );
 }

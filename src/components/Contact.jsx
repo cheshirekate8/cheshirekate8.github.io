@@ -2,7 +2,6 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import { PhoneIcon } from "@heroicons/react/24/solid";
 import SectionTitle from "./SectionTitle";
-import BottomText from "./BottomText";
 
 export default function Contact() {
   const contactItemArr = [
@@ -65,7 +64,6 @@ export default function Contact() {
           />
         ))}
       </div>
-      <BottomText label="Contact Me" />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import { SlSocialGithub, SlSocialLinkedin, SlEnvolope } from "react-icons/sl";
-import BottomText from "./BottomText";
 import Pattern1 from "../images/pat-1.png"
 import Pattern2 from "../images/pat-2.png"
 import Headshot from "../images/profile1.webp"
@@ -145,7 +144,6 @@ export default function Splash() {
           </a>
         </div>
       </div>
-      <BottomText label="Web Developer" />
     </div>
   );
 }

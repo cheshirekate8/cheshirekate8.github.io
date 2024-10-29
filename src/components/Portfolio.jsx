@@ -1,5 +1,4 @@
 import SectionTitle from "./SectionTitle";
-import BottomText from "./BottomText";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 // TODO:  Add Work or Personal Subtitle Tags?
@@ -121,7 +120,6 @@ export default function Portfolio() {
           ))}
         </div>
       </div>
-      <BottomText label="Projects" />
     </div>
   );
 }

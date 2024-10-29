@@ -1,11 +1,9 @@
-- [ ] Fix CSS
-  - [ ] Fix favicon
-  - [ ] Margins
-    - [ ] Standardize page margins 
-    - [ ] Standardize Component Margins Splash
-    - [ ] Standardize Component Margins Resume
-    - [ ] Standardize Component Margins Professional
-    - [ ] Standardize Component Margins Contacts
-- [ ] Fix images
-- [ ] Fix animations?
+- [ ] Correct Resume Download
+- [ ] Final Checks
+  - [ ] Desktop
+  - [ ] Mobile
+    - [ ] Splash image/side scrolling issue
+  - [ ] Tablet
+- [ ] Fix image sizes
+- [ ] Fix Favicon
 - [ ] Lighthouse
