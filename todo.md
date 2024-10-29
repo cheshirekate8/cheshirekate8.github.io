@@ -1,15 +1,11 @@
-1. Replace on github
-2. Fix CSS
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-3. Fix images
-4. Fix animations?
-5. Figure out how to remove react icons
+- [ ] Fix CSS
+  - [ ] Fix favicon
+  - [ ] Margins
+    - [ ] Standardize page margins 
+    - [ ] Standardize Component Margins Splash
+    - [ ] Standardize Component Margins Resume
+    - [ ] Standardize Component Margins Professional
+    - [ ] Standardize Component Margins Contacts
+- [ ] Fix images
+- [ ] Fix animations?
+- [ ] Lighthouse
