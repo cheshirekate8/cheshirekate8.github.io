@@ -89,7 +89,7 @@ export default function Skills() {
 
   const SkillComponent = ({ word, icon, percent, copy }) => {
     return (
-      <div className="mx-4 mb-16">
+      <div className="mx-4 mb-16 max-w-5xl">
         <div className="flex justify-between items-center font-bold mx-4 text-lg">
           <IconAndWord icon={icon} word={word} />
           <span>

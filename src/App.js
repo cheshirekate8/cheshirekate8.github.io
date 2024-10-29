@@ -7,7 +7,7 @@ import Splash from "./components/Splash";
 
 export default function App() {
   return (
-    <div >
+    <div className="px-4 md:px-20">
       <Splash />
       <Resume />
       <Skills />

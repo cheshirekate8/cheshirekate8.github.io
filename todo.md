@@ -3,6 +3,7 @@
   - [ ] Desktop
   - [ ] Mobile
     - [ ] Splash image/side scrolling issue
+    - [ ] Mobile Resume Animation
   - [ ] Tablet
 - [ ] Fix image sizes
 - [ ] Fix Favicon

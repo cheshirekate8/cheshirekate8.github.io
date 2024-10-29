@@ -57,7 +57,7 @@ export default function Resume() {
     },
     {
       id: 4,
-      title: "Software Engineering Assistant",
+      title: "Assistant Software Engineer",
       company: "App Academy",
       dec: "As a recent grad, mentored and collaborated with job-seeking students to better prepare them for the job search.",
       startYear: "2021",
@@ -86,7 +86,7 @@ export default function Resume() {
                   <div
                     className={`border-b-2 pr-4 ease-in-out duration-500 ${
                       experience.id === experienceToggle
-                        ? "h-64 md:h-60 overflow-scroll"
+                        ? "h-64 md:h-[17.5rem] lg:h-64 xl:h-60 overflow-scroll"
                         : "h-20 overflow-hidden"
                     }`}
                     data-animate="active"
@@ -164,7 +164,7 @@ export default function Resume() {
                   <div
                     className={`border-b-2 pr-4 ease-in-out duration-500 ${
                       educationToggle === education.id
-                        ? "h-64 md:h-60 overflow-scroll"
+                        ? "h-64 md:h-[17.5rem] lg:h-64 xl:h-60 overflow-scroll"
                         : "h-20 overflow-hidden"
                     }`}
                     data-animate="active"

@@ -87,7 +87,7 @@ export default function Splash() {
             loading="lazy"
           />
         </div>
-        <div className="w-[350px] h-[350px] relative mt-28 ease-in-out duration-500 md:w-[500px] md:h-[500px] md:mt-56">
+        <div className="w-[300px] h-[300px] relative mt-28 ease-in-out duration-500 md:w-[500px] md:h-[500px] md:mt-56">
           <div className="bg-cyan-600 rounded-full w-full h-full"></div>
           <img
             src={Headshot}
