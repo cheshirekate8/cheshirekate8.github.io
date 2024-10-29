@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { PlusIcon } from "@heroicons/react/24/outline";
+import { MinusIcon } from "@heroicons/react/24/outline";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
 
@@ -85,7 +86,7 @@ export default function Resume() {
                 <div className="relative border-r-2" key={experience.id}>
                   <div
                     className={`border-b-2 pr-4 ease-in-out duration-500 ${
-                      experience.id == experienceToggle
+                      experience.id === experienceToggle
                         ? "h-64 md:h-60 overflow-scroll"
                         : "h-20 overflow-hidden"
                     }`}
@@ -132,16 +133,16 @@ export default function Resume() {
                     }}
                     aria-label="Expand section"
                   >
-                    <AiOutlineMinus
+                    <MinusIcon
                       className={`ease-in-out duration-200 absolute ${
-                        experience.id == experienceToggle
+                        experience.id === experienceToggle
                           ? "opacity-100"
                           : "opacity-0"
                       }`}
                     />
-                    <AiOutlinePlus
+                    <PlusIcon
                       className={`ease-in-out duration-200 absolute ${
-                        experience.id == experienceToggle
+                        experience.id === experienceToggle
                           ? "opacity-0"
                           : "opacity-100"
                       }`}
@@ -207,16 +208,16 @@ export default function Resume() {
                     }}
                     aria-label="Expand section"
                   >
-                    <AiOutlineMinus
+                    <MinusIcon
                       className={`ease-in-out duration-200 absolute  ${
-                        education.id == educationToggle
+                        education.id === educationToggle
                           ? "opacity-100"
                           : "opacity-0"
                       }`}
                     />
-                    <AiOutlinePlus
+                    <PlusIcon
                       className={`ease-in-out duration-200 absolute ${
-                        education.id == educationToggle
+                        education.id === educationToggle
                           ? "opacity-0"
                           : "opacity-100"
                       }`}

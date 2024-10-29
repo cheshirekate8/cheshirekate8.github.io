@@ -1,24 +1,25 @@
-import { FaMap, FaEnvelope, FaPhone } from "react-icons/fa";
+import { MapPinIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon } from "@heroicons/react/24/solid";
+import { PhoneIcon } from "@heroicons/react/24/solid";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
-import Link from "next/link";
 
 export default function Contact() {
   const contactItemArr = [
     {
-      icon: <FaMap className="text-white" />,
+      icon: <MapPinIcon className="text-white w-6" />,
       label: "Location",
       info: "Las Vegas, NV",
       href: "",
     },
     {
-      icon: <FaEnvelope className="text-white" />,
+      icon: <EnvelopeIcon className="text-white w-6" />,
       label: "Email",
       info: "katie.f.young@me.com",
       href: "mailto:katie.f.young@me.com",
     },
     {
-      icon: <FaPhone className="text-white" />,
+      icon: <PhoneIcon className="text-white w-6" />,
       label: "Phone",
       info: "937-239-2748",
       href: "tel:+19372392748",
@@ -27,7 +28,7 @@ export default function Contact() {
 
   const ContactItem = ({ icon, label, info, href }) => {
     return (
-      <Link
+      <a
         className={`flex m-8 text-left group ${
           href ? "pointer-events-auto" : "pointer-events-none"
         }`}
@@ -43,7 +44,7 @@ export default function Contact() {
           <div className="font-caveat text-2xl py-1">{label}</div>
           <div className="">{info}</div>
         </div>
-      </Link>
+      </a>
     );
   };
 

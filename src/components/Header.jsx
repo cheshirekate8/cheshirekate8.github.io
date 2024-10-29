@@ -1,6 +1,5 @@
-import { BiMenuAltRight } from "react-icons/bi";
+import { Bars4Icon } from "@heroicons/react/24/solid";
 import { useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -78,7 +77,7 @@ const Header = () => {
         >
           <div className={`flex flex-col`}>
             <div className="pattern absolute -top-[6.75rem] -left-[6.75rem] ">
-              <Image src="/images/pat-1.png" width={250} height={250} alt="" />
+              <img src="/images/pat-1.png" width={250} height={250} alt="" />
             </div>
             <div className="dot w-8 h-8 border-2 border-black rounded-full drop-shadow-hard bg-sky-100 "></div>
             <div className="line border border-black h-full m-auto"></div>
@@ -96,7 +95,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <BiMenuAltRight
+      <Bars4Icon
         onClick={() => {
           setShowSidebar(!showSidebar);
           setNoTouch(true);

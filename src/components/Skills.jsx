@@ -57,7 +57,7 @@ export default function Skills() {
       word: "Javascript",
       icon: <SiJavascript className="text-cyan-500 mr-2" />,
       percent: 90,
-      copy: "2+ years of experience, one of my base languages. Used at Dolthub, Sandstone, and in personal projects",
+      copy: "3+ years of experience, one of my base languages. Used at Dolthub, Sandstone, and in personal projects",
     },
     {
       word: "React",
@@ -75,7 +75,7 @@ export default function Skills() {
       word: "Shopify & Liquid",
       icon: <SiShopify className="text-cyan-500 mr-2" />,
       percent: 70,
-      copy: "1 year of experience, used at Sandstone. Previous clients include Google, Lulu and Georgia, and Kin Euphorics.",
+      copy: "2 years of experience, used at Sandstone and Art Brand Studios. Previous clients include Google, Lulu and Georgia, and Kin Euphorics.",
     },
   ];
 

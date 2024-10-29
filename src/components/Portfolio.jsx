@@ -1,8 +1,6 @@
-import Image from "next/image";
-import { TbArrowRightCircle } from "react-icons/tb";
-import Link from "next/link";
 import SectionTitle from "./SectionTitle";
 import BottomText from "./BottomText";
+import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
 
 // TODO:  Add Work or Personal Subtitle Tags?
 
@@ -47,7 +45,7 @@ export default function Portfolio() {
       ? "🚧 Under Construction 🚧"
       : "See Project";
     return (
-      <Link
+      <a
         className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${
           underConstruction ? "hover:cursor-default" : ""
         }`}
@@ -58,7 +56,7 @@ export default function Portfolio() {
         }}
       >
         <div className="w-full">
-          <Image
+          <img
             src={src}
             alt={alt}
             width={width}
@@ -78,20 +76,20 @@ export default function Portfolio() {
           >
             {linkText}
             <span hidden={underConstruction}>
-              <TbArrowRightCircle className="text-4xl text-cyan-500 ml-4 ease-in-out duration-500 group-hover:translate-x-4" />
+              <ArrowRightCircleIcon className="text-4xl text-cyan-500 ml-4 ease-in-out duration-500 group-hover:translate-x-4" />
             </span>
           </div>
           <div className="pattern absolute -bottom-5 -right-5 invert w-[120px] h-[120px] opacity-30">
-            <Image
+            <img
               src="/images/pat-2.png"
               width={160}
               height={160}
-              priority
               alt="dotted pattern 2"
+              loading="lazy"
             />
           </div>
         </div>
-      </Link>
+      </a>
     );
   };
 
