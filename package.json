@@ -1,6 +1,7 @@
 {
   "name": "portfolio2",
   "version": "0.1.0",
+  "homepage": "https://myusername.github.io",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.5",
@@ -42,6 +43,5 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.14"
-  },
-  "homepage": "https://myusername.github.io"
+  }
 }
