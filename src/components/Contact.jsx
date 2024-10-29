@@ -65,7 +65,7 @@ export default function Contact() {
           />
         ))}
       </div>
-      <BottomText label="Contact Me" last={true} />
+      <BottomText label="Contact Me" />
     </div>
   );
 }
