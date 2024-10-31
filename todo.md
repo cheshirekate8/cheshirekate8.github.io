@@ -1,10 +1,11 @@
 - [ ] Correct Resume Download
+- [ ] Fix image sizes
 - [ ] Final Checks
   - [ ] Desktop
+    - [ ] ??
   - [ ] Mobile
-    - [ ] Splash image/side scrolling issue
-    - [ ] Mobile Resume Animation
+    - [ ] Splash bubbles overlap
+    - [ ] Shorten Resume text so height is correctls
   - [ ] Tablet
-- [ ] Fix image sizes
-- [ ] Fix Favicon
+      - [ ] ??
 - [ ] Lighthouse

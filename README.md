@@ -33,6 +33,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Run this to deploy this page to github pages.
 
+### `npm run letsgo`
+
+A custom script that pushes to github and deploys to github pages.
+
+Example:
+`npm run letsgo --message="Github Commit Message"`
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
