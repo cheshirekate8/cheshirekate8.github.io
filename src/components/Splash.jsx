@@ -1,7 +1,7 @@
 import { SlSocialGithub, SlSocialLinkedin, SlEnvolope } from "react-icons/sl";
-import Pattern1 from "../images/pat-1.png"
-import Pattern2 from "../images/pat-2.png"
-import Headshot from "../images/profile1.webp"
+import Pattern1 from "../images/pat-1.png";
+import Pattern2 from "../images/pat-2.png";
+import Headshot from "../images/profile1.webp";
 
 export default function Splash() {
   const socialLinks = [
@@ -61,31 +61,13 @@ export default function Splash() {
       </div>
       <div className="flex relative w-min m-auto xl:row-start-1 xl:col-start-2 xl:row-span-2">
         <div className="pattern absolute invert right-3 top-28 opacity-30 w-[130px] h-130px] md:w-[260px] md:h-[260px]">
-          <img
-            src={Pattern1}
-            width={260}
-            height={260}
-            alt=""
-            loading="lazy"
-          />
+          <img src={Pattern1} width={260} height={260} alt="" loading="lazy" />
         </div>
         <div className="pattern absolute -bottom-6 -right-8 invert opacity-30 w-[80px] h-[80px] md:w-[160px] md:h-[160px]">
-          <img
-            src={Pattern2}
-            width={160}
-            height={160}
-            alt=""
-            loading="lazy"
-          />
+          <img src={Pattern2} width={160} height={160} alt="" loading="lazy" />
         </div>
         <div className="pattern absolute bottom-0 -left-12 invert opacity-30 w-[80px] h-[80px] md:w-[160px] md:h-[160px]">
-          <img
-            src={Pattern2}
-            width={160}
-            height={160}
-            alt=""
-            loading="lazy"
-          />
+          <img src={Pattern2} width={160} height={160} alt="" loading="lazy" />
         </div>
         <div className="w-[300px] h-[300px] relative mt-28 ease-in-out duration-500 md:w-[500px] md:h-[500px] md:mt-56">
           <div className="bg-cyan-600 rounded-full w-full h-full"></div>
@@ -119,11 +101,11 @@ export default function Splash() {
       <div className="font-normal font-jost normal-case text-center pt-10 mb-12 mt-8 max-w-2xl m-auto text-base md:text-lg xl:mb-0 xl:pt-0">
         {/* eslint-disable-next-line react/no-unescaped-entities */}
         Originally from Miami, FL, I'm a Fullstack Web Developer with a passion
-        for Frontend. Since graduating App Academy in 2021, I&apos;ve completed an
-        internship at Dolthub, a tenure at Sandstone Digital Agency, and am
+        for Frontend. Since graduating App Academy in 2021, I&apos;ve completed
+        an internship at Dolthub, a tenure at Sandstone Digital Agency, and am
         currently working at Art Brand Studios. In my spare time I perform
-        stand-up comedy and play videogames. My current obsession is Stardew
-        Valley&apos;s latest update, what&apos;s yours?
+        stand-up comedy and play videogames. My current obsession is Fields of
+        Mistria, what&apos;s yours?
         <div className="py-8 md:py-16">
           <div className="flex justify-center text-4xl mb-8 md:mb-16">
             {socialLinks.map((socialLink, i) => {
