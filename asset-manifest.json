@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f1c0433.css",
-    "main.js": "/static/js/main.25ba6989.js",
+    "main.css": "/static/css/main.b3b2d02d.css",
+    "main.js": "/static/js/main.545f49b4.js",
     "static/js/453.d0ded385.chunk.js": "/static/js/453.d0ded385.chunk.js",
     "static/media/Caveat-VariableFont_wght.ttf": "/static/media/Caveat-VariableFont_wght.a58d6a2a86fd431d5635.ttf",
     "static/media/Jost-VariableFont_wght.ttf": "/static/media/Jost-VariableFont_wght.0ef84783c95cf2a77caa.ttf",
     "static/media/profile1.webp": "/static/media/profile1.9aa2ac76f3ca86a3b06e.webp",
     "static/media/pat-1.png": "/static/media/pat-1.25e4d49076a6fd169b83.png",
     "index.html": "/index.html",
-    "main.2f1c0433.css.map": "/static/css/main.2f1c0433.css.map",
-    "main.25ba6989.js.map": "/static/js/main.25ba6989.js.map",
+    "main.b3b2d02d.css.map": "/static/css/main.b3b2d02d.css.map",
+    "main.545f49b4.js.map": "/static/js/main.545f49b4.js.map",
     "453.d0ded385.chunk.js.map": "/static/js/453.d0ded385.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f1c0433.css",
-    "static/js/main.25ba6989.js"
+    "static/css/main.b3b2d02d.css",
+    "static/js/main.545f49b4.js"
   ]
 }
