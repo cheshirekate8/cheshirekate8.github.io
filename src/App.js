@@ -5,7 +5,6 @@ import Skills from "./components/Skills";
 import Splash from "./components/Splash";
 import Portfolio from "./components/Portfolio";
 
-
 export default function App() {
   return (
     <div className="px-4 md:px-20">

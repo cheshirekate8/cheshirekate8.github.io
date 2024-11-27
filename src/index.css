@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'Jost';
-  src: url('./fonts/Jost-VariableFont_wght.ttf') format('truetype');
+  font-family: "Jost";
+  src: url("./fonts/Jost-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Caveat';
-  src: url('./fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+  font-family: "Caveat";
+  src: url("./fonts/Caveat-VariableFont_wght.ttf") format("truetype");
   font-display: swap;
 }
 
@@ -23,6 +22,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

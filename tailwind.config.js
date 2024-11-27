@@ -4,10 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jost: ['Jost', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
-        caveat: ['Caveat', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        jost: ["Jost", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        caveat: ["Caveat", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};

@@ -1,2 +1,3 @@
-- [ ] Revisit Navbar
+- [ ] Revisit Projects section
 - [ ] getElements to refs
+- [ ] Revisit Navbar

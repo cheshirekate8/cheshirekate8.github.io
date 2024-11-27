@@ -78,7 +78,7 @@ export default function Resume() {
             href="KatieYoungResume.pdf"
             target="_blank"
             download
-            >
+          >
             DOWNLOAD PDF
           </a>
           <a
@@ -86,7 +86,7 @@ export default function Resume() {
             href="KatieYoungResume.docx"
             target="_blank"
             download
-            >
+          >
             DOWNLOAD DOCX
           </a>
         </div>

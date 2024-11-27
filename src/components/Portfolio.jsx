@@ -1,6 +1,6 @@
 import SectionTitle from "./SectionTitle";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-import ProjectMgmtScreenshot from "../images/Project-Mgmt-Screenshot.png"
+import ProjectMgmtScreenshot from "../images/Project-Mgmt-Screenshot.png";
 import Pattern2 from "../images/pat-2.png";
 
 export default function Portfolio() {
