@@ -1,11 +1,2 @@
-- [ ] Correct Resume Download
-- [ ] Fix image sizes
-- [ ] Final Checks
-  - [ ] Desktop
-    - [ ] ??
-  - [ ] Mobile
-    - [ ] Splash bubbles overlap
-    - [ ] Shorten Resume text so height is correctls
-  - [ ] Tablet
-      - [ ] ??
-- [ ] Lighthouse
+- [ ] Revisit Navbar
+- [ ] getElements to refs

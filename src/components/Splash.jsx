@@ -78,7 +78,7 @@ export default function Splash() {
             height={500}
             className="rounded-b-full absolute bottom-0 m-auto"
             loading="eager"
-            priority
+            priority="true"
           />
           <div className="border bg-zinc-800 absolute bottom-8 rounded-full px-6 py-2 flex items-center font-jost font-bold">
             <div className="text-2xl pr-2 justify-start ease-in-out duration-500 md:text-4xl">

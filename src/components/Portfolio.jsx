@@ -1,31 +1,20 @@
 import SectionTitle from "./SectionTitle";
 import { ArrowRightCircleIcon } from "@heroicons/react/24/solid";
-
-// TODO:  Add Work or Personal Subtitle Tags?
+import ProjectMgmtScreenshot from "../images/Project-Mgmt-Screenshot.png"
+import Pattern2 from "../images/pat-2.png";
 
 export default function Portfolio() {
   const cardArray = [
     {
-      src: "/images/SandstoneScreenshot.png",
-      alt: "Sandstone homepage screenshot",
+      src: ProjectMgmtScreenshot,
+      alt: "Project Managment App screenshot",
       width: 3456,
       height: 1775,
-      langs: "Shopify, Liquid, React, Tailwind",
-      projName: "Sandstone",
-      copy: "A showcase of my work with Kin, Lulu and Georgia and other internal projects.",
-      href: "sandstone",
+      langs: "React.js, GraphQL, MongoDB, Bootstrap, Vercel",
+      projName: "Project Management App",
+      copy: "Streamlined project management app tracking clients and projects with React and GraphQL.",
+      href: "https://project-mgmt-app-client-three.vercel.app/",
       underConstruction: false,
-    },
-    {
-      src: "/images/CAHDeckBuilder.png",
-      alt: "Cards Against Humanity Deck Builder",
-      width: 3456,
-      height: 1775,
-      langs: "React, Tailwind, JSON",
-      projName: "CAH Custom Deck Builder",
-      copy: "A personal project where a user can create their own custom Cards Against Humanity deck or pack.",
-      href: "cahdb",
-      underConstruction: true,
     },
   ];
 
@@ -48,7 +37,7 @@ export default function Portfolio() {
         className={`group w-80 rounded-3xl bg-zinc-700 relative p-7 overflow-hidden flex flex-col justify-between ${
           underConstruction ? "hover:cursor-default" : ""
         }`}
-        href={`/${href}`}
+        href={`${href}`}
         onClick={(e) => {
           if (underConstruction === false) return;
           e.preventDefault();
@@ -71,7 +60,7 @@ export default function Portfolio() {
             className={`font-semibold flex ml-4 items-center ${
               underConstruction ? "text-orange-300" : ""
             }`}
-            href={`/${href}`}
+            href={`${href}`}
           >
             {linkText}
             <span hidden={underConstruction}>
@@ -80,7 +69,7 @@ export default function Portfolio() {
           </div>
           <div className="pattern absolute -bottom-5 -right-5 invert w-[120px] h-[120px] opacity-30">
             <img
-              src="/images/pat-2.png"
+              src={Pattern2}
               width={160}
               height={160}
               alt="dotted pattern 2"

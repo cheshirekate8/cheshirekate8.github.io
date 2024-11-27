@@ -2,6 +2,8 @@ import { Bars4Icon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+//TODO: Change getElement to ref
+
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   const [noTouch, setNoTouch] = useState(false);

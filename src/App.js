@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Skills from "./components/Skills";
 import Splash from "./components/Splash";
+import Portfolio from "./components/Portfolio";
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
       <Splash />
       <Resume />
       <Skills />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Contact />
     </div>
   );
