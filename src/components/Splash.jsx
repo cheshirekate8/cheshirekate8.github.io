@@ -118,7 +118,7 @@ export default function Splash() {
           </div>
           <a
             className="border bg-zinc-800 rounded-full px-6 py-2 flex items-center font-jost font-bold w-max justify-center m-auto ease-in-out duration-200 drop-shadow-hard -translate-x-1 -translate-y-1 active:translate-x-0 active:translate-y-0 active:drop-shadow-none hover:bg-sky-900 md:text-lg md:px-12 md:py-4"
-            href="KatieYoungResume.pdf"
+            href="KatieYoung0825Resume.pdf"
             target="_blank"
             download
           >

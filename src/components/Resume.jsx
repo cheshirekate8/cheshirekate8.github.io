@@ -75,7 +75,7 @@ export default function Resume() {
         <div className="flex flex-col sm:flex-row items-cente mb-8">
           <a
             className="border bg-zinc-800 rounded-full px-6 py-2 font-jost font-bold w-max justify-center mb-4 sm:mb-0 sm:mr-8 ease-in-out duration-200 drop-shadow-hard -translate-x-1 -translate-y-1 active:translate-x-0 active:translate-y-0 active:drop-shadow-none hover:bg-sky-900 md:text-lg md:px-12 md:py-4"
-            href="KatieYoungResume.pdf"
+            href="KatieYoung0825Resume.pdf"
             target="_blank"
             download
           >
