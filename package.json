@@ -3,19 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "homepage": "https://cheshirekate8.github.io",
+  "homepage": "https://cheshirekate8.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,md}\""
   },
   "dependencies": {
     "@types/node": "^24.3.1",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.542.0",
+    "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.2"
