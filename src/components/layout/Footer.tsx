@@ -1,5 +1,11 @@
 import React from "react";
 
-export default function Footer() {
-  return <footer>Footer</footer>;
-}
+const Footer = () => {
+  return (
+    <footer className="bg-blue-black text-lav-white py-8 text-center">
+      <p>Footer</p>
+    </footer>
+  );
+};
+
+export default Footer;
