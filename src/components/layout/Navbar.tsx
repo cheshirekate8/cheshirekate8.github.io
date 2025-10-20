@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { navLinks } from "../../data/navigation";
 
 const Navbar = () => {
@@ -56,7 +56,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Your Name
+            Katie Young
           </motion.a>
 
           {/* Desktop Navigation */}

@@ -14,7 +14,7 @@ export interface PersonalInfo {
 }
 
 export const personalInfo: PersonalInfo = {
-  name: "Your Name",
+  name: "Katie Young",
   title: "Frontend Developer",
   tagline: "Building beautiful, performant web experiences",
   bio: [
