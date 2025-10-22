@@ -2,10 +2,11 @@ import { Project } from "../types";
 
 export const projects: Project[] = [
   {
-    id: "project-1",
-    title: "Your Project Name",
-    description: "Brief description for card view",
-    longDescription: "More detailed description...",
+    id: "cahdb",
+    title: "Cards Against Humanity Deck Builder",
+    description:
+      "Build, save, and share custom Cards Against Humanity decks with my intuitive click-to-add builder.",
+    longDescription: "More detailed description to write later...",
     image: "/path/to/image.png",
     technologies: ["React", "TypeScript", "Tailwind"],
     liveUrl: "https://...",

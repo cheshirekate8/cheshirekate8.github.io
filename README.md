@@ -11,19 +11,29 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
-
-    <div className="bg-lav-white dark:bg-blue-black text-blue-black dark:text-lav-white">
-      <Header />
-      <Home />
-      <About />
-      <div className="flex justify-center">
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h2>Built with</h2>
-      <h1>Vite + React</h1>
-    </div>
+To Do
+  General
+  - Change SVG to icons where possible
+  - Actually use all the data in the data folder instead of hard coding it
+  - Remove all commented code
+  - Fix scroll up background white
+  Navbar
+  - Fix on mobile
+  Hero
+  - Change copy
+  About
+  - Icon colors for light and dark mode
+  - Change to Professional Summary Copy
+  - Maybe get rid of technologies I work with? It'll be under skills
+  Experience
+  - Add accurate data
+  Projects
+  - CAHDB
+    - Image
+    - Data
+  - Add portfolio website to projects
+  Skills
+    - Replace template skills with current skills
+    - Add icons to skill cards
+  Contact
+    - Simplify? Looks too corperate 

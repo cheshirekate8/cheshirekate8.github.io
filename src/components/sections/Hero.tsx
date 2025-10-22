@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { personalInfo } from "../../data/info";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,10 +16,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-lavender via-white to-purple/10 dark:from-blue-black dark:via-navy dark:to-purple/20">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-vivid-sky via-white to-pacific-cyan/10 dark:from-federal-blue dark:via-marian-blue dark:to-pacific-cyan/20">
       {/* Animated background circles */}
       <motion.div
-        className="absolute top-20 left-10 w-72 h-72 bg-purple/30 dark:bg-purple/20 rounded-full blur-2xl"
+        className="absolute top-20 left-10 w-72 h-72 bg-pacific-cyan/30 dark:bg-pacific-cyan/20 rounded-full blur-2xl"
         animate={{
           scale: [1, 1.2, 1],
           x: [0, 50, 0],
@@ -31,7 +32,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-lavender dark:bg-royal/30 rounded-full blur-2xl"
+        className="absolute bottom-20 right-10 w-96 h-96 bg-vivid-sky/30 dark:bg-honolulu-blue/30 rounded-full blur-2xl"
         animate={{
           scale: [1, 1.3, 1],
           x: [0, -50, 0],
@@ -45,7 +46,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-royal/20 dark:bg-purple/15 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-honolulu-blue/20 dark:bg-pacific-cyan/15 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.4, 1],
           rotate: [0, 180, 360],
@@ -65,19 +66,19 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h1
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-navy dark:text-lavender mb-6"
+            className="text-5xl md:text-6xl lg:text-7xl font-bold text-marian-blue dark:text-vivid-sky mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-royal via-purple to-royal bg-clip-text text-transparent">
-              Katie Young
+            <span className="bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue bg-clip-text text-transparent">
+              {personalInfo.name}
             </span>
           </motion.h1>
 
           <motion.h2
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-purple dark:text-lavender mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold text-pacific-cyan dark:text-vivid-sky mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -86,7 +87,7 @@ const Hero = () => {
           </motion.h2>
 
           <motion.p
-            className="text-lg md:text-xl text-navy/80 dark:text-lav-white/80 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-marian-blue/80 dark:text-light-cyan/80 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -103,13 +104,33 @@ const Hero = () => {
           >
             <button
               onClick={() => scrollToSection("#projects")}
-              className="bg-royal hover:bg-navy dark:bg-purple dark:hover:bg-royal text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg"
+              className="bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg"
             >
               View My Work
             </button>
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-pacific-cyan hover:bg-honolulu-blue dark:bg-honolulu-blue dark:hover:bg-pacific-cyan text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center gap-2"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              Download Resume
+            </a>
             <button
               onClick={() => scrollToSection("#contact")}
-              className="bg-transparent border-2 border-royal dark:border-purple text-royal dark:text-lavender hover:bg-royal/10 dark:hover:bg-purple/10 px-8 py-3 rounded-lg font-medium transition-all hover:scale-105"
+              className="bg-transparent border-2 border-honolulu-blue dark:border-pacific-cyan text-honolulu-blue dark:text-vivid-sky hover:bg-honolulu-blue/10 dark:hover:bg-pacific-cyan/10 px-8 py-3 rounded-lg font-medium transition-all hover:scale-105"
             >
               Get In Touch
             </button>
@@ -130,7 +151,7 @@ const Hero = () => {
             onClick={() => scrollToSection("#about")}
           >
             <svg
-              className="w-6 h-6 text-navy dark:text-lavender"
+              className="w-6 h-6 text-marian-blue dark:text-vivid-sky"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"

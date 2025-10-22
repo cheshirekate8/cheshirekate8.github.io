@@ -1,19 +1,34 @@
 import { SkillCategory } from "../types";
-
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Frontend",
+    title: "Frontend Development",
     skills: [
-      { name: "React", proficiency: 90, category: "frontend" },
-      { name: "TypeScript", proficiency: 85, category: "frontend" },
-      { name: "Tailwind CSS", proficiency: 90, category: "frontend" },
+      { name: "React", category: "frontend" },
+      { name: "TypeScript", category: "frontend" },
+      { name: "JavaScript", category: "frontend" },
+      { name: "HTML/CSS", category: "frontend" },
+      { name: "Tailwind CSS", category: "frontend" },
+      { name: "Responsive Design", category: "frontend" },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "Tools & Technologies",
     skills: [
-      { name: "Git", proficiency: 85, category: "tools" },
-      { name: "Vite", proficiency: 80, category: "tools" },
+      { name: "Git & GitHub", category: "tools" },
+      { name: "Vite", category: "tools" },
+      { name: "npm/yarn", category: "tools" },
+      { name: "VS Code", category: "tools" },
+      { name: "Chrome DevTools", category: "tools" },
+      { name: "Figma", category: "tools" },
+    ],
+  },
+  {
+    title: "Other Skills",
+    skills: [
+      { name: "RESTful APIs", category: "other" },
+      { name: "Problem Solving", category: "other" },
+      { name: "UI/UX Principles", category: "other" },
+      { name: "Agile/Scrum", category: "other" },
     ],
   },
 ];

@@ -16,9 +16,9 @@ const Button = ({
 
   const variants = {
     primary:
-      "bg-royal hover:bg-navy dark:bg-purple dark:hover:bg-royal text-white hover:shadow-lg",
+      "bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white hover:shadow-lg",
     secondary:
-      "bg-transparent border-2 border-royal dark:border-purple text-royal dark:text-lavender hover:bg-royal/10 dark:hover:bg-purple/10",
+      "bg-transparent border-2 border-honolulu-blue dark:border-pacific-cyan text-honolulu-blue dark:text-vivid-sky hover:bg-honolulu-blue/10 dark:hover:bg-pacific-cyan/10",
   };
 
   return (

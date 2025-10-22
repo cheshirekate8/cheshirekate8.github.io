@@ -10,7 +10,6 @@ html {
 
 /* Base styles */
 body {
-  @apply bg-white dark:bg-blue-black text-blue-black dark:text-lav-white transition-colors duration-300;
   margin: 0;
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -21,9 +20,42 @@ body {
 
 /* Selection color */
 ::selection {
-  @apply bg-lavender text-navy;
+  @apply bg-vivid-sky text-marian-blue;
 }
 
 ::-moz-selection {
-  @apply bg-lavender text-navy;
+  @apply bg-vivid-sky text-marian-blue;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-vivid-sky/20 dark:bg-marian-blue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-pacific-cyan dark:bg-honolulu-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-honolulu-blue dark:bg-pacific-cyan;
+}
+
+/* Remove default focus outline and add custom one */
+*:focus-visible {
+  @apply outline-none ring-2 ring-honolulu-blue dark:ring-pacific-cyan ring-offset-2 rounded;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

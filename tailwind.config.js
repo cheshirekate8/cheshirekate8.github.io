@@ -7,15 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        "blue-black": "#050823", //text lightmode
-        "navy": "#0C134F", //main headings, body text, navigation labels, and icons
-        "royal": "#1D267D", //call-to-action buttons, primary links, active navigation states
-        "purple": "#5C469C", //secondary buttons, hover states, form field borders when focused, subheadings
-        "lavender": "#D4ADFC", //badges, notifications, progress bars, subtle background sections
-        "lav-white": "#F5EBFE", //text darkmode
+        'federal-blue': '#03045e',
+        'marian-blue': '#023e8a',
+        'honolulu-blue': '#0077b6',
+        'blue-green': '#0096c7',
+        'pacific-cyan': '#00b4d8',
+        'vivid-sky': '#48cae4',
+        'non-photo': '#90e0ef',
+        'light-cyan': '#caf0f8',
       }
     },
   },
   plugins: [],
   darkMode: 'class',
 }
+

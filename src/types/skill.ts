@@ -1,7 +1,8 @@
+import { IconType } from "@icons-pack/react-simple-icons";
+
 export interface Skill {
   name: string;
-  icon?: string; // Icon name or path
-  proficiency?: number; // 1-5 or 1-100
+  icon?: IconType;
   category: "frontend" | "backend" | "tools" | "other";
 }
 

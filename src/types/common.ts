@@ -1,3 +1,5 @@
+import { IconType } from "@icons-pack/react-simple-icons";
+import { ReactNode } from "react";
 export interface NavLink {
   label: string;
   href: string; // Section ID like "#about"
@@ -22,4 +24,17 @@ export interface SectionProps {
   id: string;
   children: React.ReactNode;
   className?: string;
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  position: string;
+  location: string;
+  startDate: string;
+  endDate: string; // Use "Present" for current job
+  description: string;
+  responsibilities: string[];
+  technologies?: string[];
+  logo?: string; // Optional company logo
 }

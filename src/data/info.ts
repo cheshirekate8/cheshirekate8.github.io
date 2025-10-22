@@ -10,7 +10,7 @@ export interface PersonalInfo {
     linkedin: string;
     twitter?: string;
   };
-  resume?: string; // Link to resume PDF
+  resume?: string;
 }
 
 export const personalInfo: PersonalInfo = {
@@ -23,7 +23,7 @@ export const personalInfo: PersonalInfo = {
   ],
   email: "you@example.com",
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
+    github: "https://github.com/cheshirekate8",
+    linkedin: "https://linkedin.com/in/cheshirekate8",
   },
 };
