@@ -87,6 +87,13 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
             ⭐ Featured
           </div>
         )}
+
+        {/* Construction badge */}
+        {project.underConstruction && (
+          <div className="absolute top-4 right-4 bg-honolulu-blue text-white px-3 py-1 rounded-full text-sm font-medium">
+            🚧 Under Construction
+          </div>
+        )}
       </div>
 
       {/* Content */}

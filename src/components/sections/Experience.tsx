@@ -47,9 +47,17 @@ const Experience = () => {
                   </h3>
                   <div className="flex flex-wrap items-center gap-3 text-lg">
                     <span className="text-pacific-cyan dark:text-vivid-sky font-semibold flex items-center gap-2">
-                      <span className="text-2xl">
-                        {index % 3 === 0 ? "🏢" : index % 3 === 1 ? "🚀" : "💼"}
-                      </span>
+                      {exp.logo ? (
+                        <img src={exp.logo} className="w-12" />
+                      ) : (
+                        <span className="text-2xl">
+                          {index % 3 === 0
+                            ? "🏢"
+                            : index % 3 === 1
+                              ? "🚀"
+                              : "💼"}
+                        </span>
+                      )}
                       {exp.company}
                     </span>
                     <span className="text-marian-blue/50 dark:text-light-cyan/50">
@@ -64,11 +72,6 @@ const Experience = () => {
                   {exp.startDate} - {exp.endDate}
                 </div>
               </div>
-
-              <p className="text-marian-blue/80 dark:text-light-cyan/80 mb-6 text-lg">
-                {exp.description}
-              </p>
-
               {/* Responsibilities */}
               <div className="mb-6">
                 <h4 className="text-marian-blue dark:text-vivid-sky font-semibold mb-3">

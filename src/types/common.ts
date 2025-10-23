@@ -33,7 +33,6 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string; // Use "Present" for current job
-  description: string;
   responsibilities: string[];
   technologies?: string[];
   logo?: string; // Optional company logo

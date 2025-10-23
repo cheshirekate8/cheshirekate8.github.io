@@ -25,15 +25,10 @@ To Do
   - Icon colors for light and dark mode
   - Change to Professional Summary Copy
   - Maybe get rid of technologies I work with? It'll be under skills
-  Experience
-  - Add accurate data
   Projects
   - CAHDB
     - Image
     - Data
-  - Add portfolio website to projects
   Skills
     - Replace template skills with current skills
     - Add icons to skill cards
-  Contact
-    - Simplify? Looks too corperate 
