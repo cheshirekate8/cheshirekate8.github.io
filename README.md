@@ -1,34 +1,59 @@
-# React + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. Features smooth animations, dark mode, and a clean design to showcase my work and experience.
 
-Currently, two official plugins are available:
+![Portfolio Preview](public/portfolioPic.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+[View Live Site](https://cheshirekate8.github.io)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
 
-To Do
-  General
+- 🎨 **Modern Design** - Clean, professional interface with a cohesive blue color scheme
+- 🌓 **Dark Mode** - Toggle between light and dark themes with persistent preference
+- ⚡ **Smooth Animations** - Powered by Framer Motion for engaging user experience
+- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop devices
+- 🚀 **Fast Performance** - Built with Vite for lightning-fast load times
+- ♿ **Accessible** - Keyboard navigation and screen reader friendly
+- 📊 **Scroll Progress** - Visual indicator showing page scroll position
+- 🎯 **Interactive Projects** - Filterable project showcase with live demos
+
+## 🛠️ Technologies
+
+- **Frontend:** React 18, TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Build Tool:** Vite
+- **Deployment:** GitHub Pages
+- **Version Control:** Git & GitHub
+
+## 📬 Contact
+
+- **Email:** katie.f.young@me.com
+- **LinkedIn:** [linkedin.com/in/dev-katie-young](https://linkedin.com/in/dev-katie-young)
+- **GitHub:** [github.com/cheshirekate8](https://github.com/cheshirekate8)
+
+## ✅ To Do
+- General
   - Change SVG to icons where possible
+  - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code
-  - Fix scroll up background white
-  Navbar
+- Navbar
   - Fix on mobile
-  Hero
+- Hero
   - Change copy
-  About
+- About
   - Icon colors for light and dark mode
-  - Change to Professional Summary Copy
-  - Maybe get rid of technologies I work with? It'll be under skills
-  Projects
+  - Change "technologies I work with" to "my favorite languages"
+- Projects
+  - Fix languages text color
+  - If portfolio, remove live demo button
   - CAHDB
     - Image
     - Data
-  Skills
+    - Finish and Deploy CAHDB (last to do)
+- Skills
     - Replace template skills with current skills
     - Add icons to skill cards

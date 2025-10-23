@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { personalInfo } from "../../data/info";
+import { ArrowDown, Download } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -86,7 +87,7 @@ const Hero = () => {
             Full Stack Developer with Frontend Expertise
           </motion.h2>
 
-          <motion.p
+          {/* <motion.p
             className="text-lg md:text-xl text-marian-blue/80 dark:text-light-cyan/80 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +95,7 @@ const Hero = () => {
           >
             I craft beautiful, responsive web experiences with modern
             technologies. Passionate about clean code and pixel-perfect designs.
-          </motion.p>
+          </motion.p> */}
 
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -113,19 +114,7 @@ const Hero = () => {
               download
               className="bg-pacific-cyan hover:bg-honolulu-blue dark:bg-honolulu-blue dark:hover:bg-pacific-cyan text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center gap-2"
             >
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
+              <Download />
               Download Resume
             </a>
             <button
@@ -150,17 +139,7 @@ const Hero = () => {
             className="cursor-pointer"
             onClick={() => scrollToSection("#about")}
           >
-            <svg
-              className="w-6 h-6 text-marian-blue dark:text-vivid-sky"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
+            <ArrowDown />
           </motion.div>
         </motion.div>
       </div>

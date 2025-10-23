@@ -71,14 +71,7 @@ const About = () => {
             className="relative"
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
-              {/* Placeholder for profile image */}
               <div className="w-full h-full rounded-2xl bg-gradient-to-br from-vivid-sky via-pacific-cyan/20 to-honolulu-blue/20 dark:from-marian-blue dark:via-pacific-cyan/20 dark:to-honolulu-blue/20 flex items-center justify-center border-2 border-pacific-cyan/30 dark:border-vivid-sky/30">
-                {/* <div className="text-center">
-                  <div className="text-6xl mb-4">👨‍💻</div>
-                  <p className="text-marian-blue/60 dark:text-light-cyan/60 text-sm">
-                    Your photo here
-                  </p>
-                </div> */}
                 <img src="./headshot.png" className="h-full rounded-2xl" />
               </div>
 
@@ -117,23 +110,21 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
-              I'm a passionate frontend developer with a love for creating
-              beautiful, functional web experiences. I specialize in building
-              responsive websites and web applications that not only look great
-              but provide seamless user experiences.
+              I'm a software engineer with 4 years of experience building web
+              and desktop applications, specializing in frontend development
+              with React and TypeScript. I love learning new technologies like
+              Rust and using AI-assisted development to work efficiently.
             </p>
 
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
-              With expertise in modern web technologies like React, TypeScript,
-              and Tailwind CSS, I turn design concepts into pixel-perfect,
-              performant code. I'm constantly learning and staying up-to-date
-              with the latest trends in web development.
+              My background spans agency and product environments, from security
+              focused desktop applications to web applications and e-commerce.
             </p>
 
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing my knowledge with
-              the developer community.
+              When I'm not coding, I'm spending my time with my husband and
+              cats, watching the latest TV shows and movies or playing video
+              games.
             </p>
 
             <div className="pt-4">

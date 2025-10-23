@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const ScrollToTop = () => {
@@ -37,19 +38,7 @@ const ScrollToTop = () => {
           className="fixed bottom-8 right-8 z-40 bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white p-3 rounded-full shadow-lg"
           aria-label="Scroll to top"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
-          </svg>
+          <ArrowUp />
         </motion.button>
       )}
     </AnimatePresence>
