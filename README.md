@@ -35,15 +35,13 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **GitHub:** [github.com/cheshirekate8](https://github.com/cheshirekate8)
 
 ## ✅ To Do
+- Navbar
+  - Fix on mobile
 - General
   - Change SVG to icons where possible
   - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code
-- Navbar
-  - Fix on mobile
-- Hero
-  - Change copy
 - About
   - Icon colors for light and dark mode
   - Change "technologies I work with" to "my favorite languages"
@@ -54,6 +52,8 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
     - Image
     - Data
     - Finish and Deploy CAHDB (last to do)
-- Skills
-    - Replace template skills with current skills
-    - Add icons to skill cards
+- LATER (hidden code)
+  - Hero
+    - Rewrite copy
+  - Skills
+    - Redo Always Learning section

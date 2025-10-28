@@ -73,8 +73,8 @@ const Skills = () => {
                   <SkillCard
                     key={skill.name}
                     name={skill.name}
-                    icon={skill.icon} // proficiency={skill.proficiency || 0}
-                    // delay={categoryIndex * 0.2 + skillIndex * 0.1}
+                    icon={skill.icon}
+                    color={skill.color || "red"}
                   />
                 ))}
               </div>
@@ -83,7 +83,7 @@ const Skills = () => {
         </div>
 
         {/* Additional Info */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -113,7 +113,7 @@ const Skills = () => {
               </span>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
