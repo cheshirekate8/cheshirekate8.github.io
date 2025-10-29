@@ -1,6 +1,7 @@
 import {
   SiFramer,
   SiGit,
+  SiGithub,
   SiHtml5,
   SiJavascript,
   SiReact,
@@ -16,14 +17,14 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const technologies = [
-    { name: "React", icon: <SiReact size={40} /> },
-    { name: "TypeScript", icon: <SiTypescript size={40} /> },
-    { name: "JavaScript", icon: <SiJavascript size={40} /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss size={40} /> },
-    { name: "HTML/CSS", icon: <SiHtml5 size={40} /> },
-    { name: "Git", icon: <SiGit size={40} /> },
-    { name: "Vite", icon: <SiVite size={40} /> },
-    { name: "Framer Motion", icon: <SiFramer size={40} /> },
+    { name: "React", icon: <SiReact size={40} color="#61DAFB" /> },
+    { name: "TypeScript", icon: <SiTypescript size={40} color="#3178C6" /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss size={40} color="#06B6D4" /> },
+    { name: "Framer Motion", icon: <SiFramer size={40} color="#0055FF" /> },
+    { name: "JavaScript", icon: <SiJavascript size={40} color="#F7DF1E" /> },
+    { name: "HTML/CSS", icon: <SiHtml5 size={40} color="#E34F26" /> },
+    { name: "Github", icon: <SiGithub size={40} color="#181717" /> },
+    { name: "Vite", icon: <SiVite size={40} color="#646CFF" /> },
   ];
 
   const containerVariants = {
@@ -146,7 +147,7 @@ const About = () => {
           className="mt-20"
         >
           <h3 className="text-2xl md:text-3xl font-bold text-marian-blue dark:text-vivid-sky mb-8 text-center">
-            Technologies I Work With
+            My Favorite Technologies
           </h3>
 
           <motion.div

@@ -35,16 +35,11 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **GitHub:** [github.com/cheshirekate8](https://github.com/cheshirekate8)
 
 ## ✅ To Do
-- Navbar
-  - Fix on mobile
 - General
   - Change SVG to icons where possible
   - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code
-- About
-  - Icon colors for light and dark mode
-  - Change "technologies I work with" to "my favorite languages"
 - Projects
   - Fix languages text color
   - If portfolio, remove live demo button
@@ -57,3 +52,4 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
     - Rewrite copy
   - Skills
     - Redo Always Learning section
+    - Add color loop for icons without color
