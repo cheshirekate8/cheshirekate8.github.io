@@ -36,17 +36,12 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 
 ## ✅ To Do
 - General
-  - Change SVG to icons where possible
   - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code
-- Projects
-  - Fix languages text color
-  - If portfolio, remove live demo button
   - CAHDB
-    - Image
-    - Data
     - Finish and Deploy CAHDB (last to do)
+    - Image again once done
 - LATER (hidden code)
   - Hero
     - Rewrite copy

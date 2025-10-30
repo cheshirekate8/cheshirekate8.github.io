@@ -94,7 +94,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="bg-vivid-sky dark:bg-pacific-cyan/20 text-pacific-cyan dark:text-vivid-sky px-3 py-1 rounded-full text-sm font-medium"
+              className="bg-vivid-sky dark:bg-pacific-cyan/20 text-marian-blue dark:text-vivid-sky px-3 py-1 rounded-full text-sm font-medium"
             >
               {tech}
             </span>
