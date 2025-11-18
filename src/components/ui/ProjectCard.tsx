@@ -21,7 +21,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         {project.image ? (
           <img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title}'s Demo image`}
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         ) : (

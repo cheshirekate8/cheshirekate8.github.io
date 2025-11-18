@@ -39,7 +39,6 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
   - Fix arrow down color for light/dark
 - General
   - Lighthouse score over 95 
-    - Add alt text to all images
     - Color contrasts
     - SEO - Needs meta description
     - 
