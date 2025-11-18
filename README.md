@@ -35,7 +35,14 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
 - **GitHub:** [github.com/cheshirekate8](https://github.com/cheshirekate8)
 
 ## ✅ To Do
+- Hero
+  - Fix arrow down color for light/dark
 - General
+  - Lighthouse score over 95 
+    - Add alt text to all images
+    - Color contrasts
+    - SEO - Needs meta description
+    - 
   - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code
