@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-federal-blue dark:bg-marian-blue text-light-cyan border-t border-pacific-cyan/30">
+    <footer className="bg-federal-blue text-light-cyan border-t border-pacific-cyan/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Left - Brand */}

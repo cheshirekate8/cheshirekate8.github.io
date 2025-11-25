@@ -25,5 +25,4 @@ const SkillCard = ({
     <p className="text-marian-blue dark:text-light-cyan font-medium">{name}</p>
   </motion.div>
 );
-
 export default SkillCard;

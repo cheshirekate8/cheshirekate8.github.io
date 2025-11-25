@@ -28,7 +28,7 @@ const Contact = () => {
     >
       {/* Animated background blobs */}
       <motion.div
-        className="absolute top-20 left-10 w-96 h-96 bg-pacific-cyan/20 dark:bg-pacific-cyan/10 rounded-full blur-3xl"
+        className="hidden md:block absolute top-20 left-10 w-96 h-96 bg-pacific-cyan/20 dark:bg-pacific-cyan/10 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
           x: [0, 50, 0],
@@ -40,7 +40,7 @@ const Contact = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-honolulu-blue/20 dark:bg-honolulu-blue/10 rounded-full blur-3xl"
+        className="hidden md:block absolute bottom-20 right-10 w-96 h-96 bg-honolulu-blue/20 dark:bg-honolulu-blue/10 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.3, 1],
           x: [0, -50, 0],

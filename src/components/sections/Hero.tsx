@@ -20,7 +20,7 @@ const Hero = () => {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-vivid-sky via-white to-pacific-cyan/10 dark:from-federal-blue dark:via-marian-blue dark:to-pacific-cyan/20">
       {/* Animated background circles */}
       <motion.div
-        className="absolute top-20 left-10 w-72 h-72 bg-pacific-cyan/30 dark:bg-pacific-cyan/20 rounded-full blur-2xl"
+        className="hidden md:block absolute top-20 left-10 w-72 h-72 bg-pacific-cyan/30 dark:bg-pacific-cyan/20 rounded-full blur-2xl"
         animate={{
           scale: [1, 1.2, 1],
           x: [0, 50, 0],
@@ -33,7 +33,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-20 right-10 w-96 h-96 bg-vivid-sky/30 dark:bg-honolulu-blue/30 rounded-full blur-2xl"
+        className="hidden md:block absolute bottom-20 right-10 w-96 h-96 bg-vivid-sky/30 dark:bg-honolulu-blue/30 rounded-full blur-2xl"
         animate={{
           scale: [1, 1.3, 1],
           x: [0, -50, 0],
@@ -47,7 +47,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-honolulu-blue/20 dark:bg-pacific-cyan/15 rounded-full blur-3xl"
+        className="hidden md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-honolulu-blue/20 dark:bg-pacific-cyan/15 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.4, 1],
           rotate: [0, 180, 360],
@@ -105,14 +105,14 @@ const Hero = () => {
           >
             <button
               onClick={() => scrollToSection("#projects")}
-              className="bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg"
+              className="bg-vivid-sky/50 dark:bg-federal-blue/50 text-marian-blue dark:text-light-cyan px-6 py-3 rounded-lg font-medium transition-all border border-pacific-cyan/30 dark:border-vivid-sky/30 hover:scale-105 hover:shadow-lg"
             >
               View My Work
             </button>
             <a
               href="/resume.pdf"
               download
-              className="bg-pacific-cyan hover:bg-honolulu-blue dark:bg-honolulu-blue dark:hover:bg-pacific-cyan text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center gap-2"
+              className="bg-honolulu-blue text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center gap-2"
             >
               <Download />
               Download Resume
@@ -136,7 +136,7 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="cursor-pointer"
+            className="cursor-pointer text-marian-blue dark:text-non-photo"
             onClick={() => scrollToSection("#about")}
           >
             <ArrowDown />

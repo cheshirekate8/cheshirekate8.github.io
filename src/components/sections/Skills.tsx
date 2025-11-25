@@ -2,29 +2,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { skillCategories } from "../../data/skills";
 import SkillCard from "../ui/SkillCard";
+import { colors } from "../../data/styles";
 
 const Skills = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.5 },
-    },
-  };
 
   return (
     <section
@@ -74,7 +56,7 @@ const Skills = () => {
                     key={skill.name}
                     name={skill.name}
                     icon={skill.icon}
-                    color={skill.color || "red"}
+                    color={skill.color || colors.blueGreen}
                   />
                 ))}
               </div>

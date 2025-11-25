@@ -82,7 +82,7 @@ const About = () => {
 
               {/* Decorative elements */}
               <motion.div
-                className="absolute -top-4 -right-4 w-24 h-24 bg-pacific-cyan/20 dark:bg-pacific-cyan/10 rounded-full blur-2xl"
+                className="hidden md:block absolute -top-4 -right-4 w-24 h-24 bg-pacific-cyan/20 dark:bg-pacific-cyan/10 rounded-full blur-2xl"
                 animate={{
                   scale: [1, 1.2, 1],
                 }}
@@ -93,7 +93,7 @@ const About = () => {
                 }}
               />
               <motion.div
-                className="absolute -bottom-4 -left-4 w-32 h-32 bg-honolulu-blue/20 dark:bg-honolulu-blue/10 rounded-full blur-2xl"
+                className="hidden md:block absolute -bottom-4 -left-4 w-32 h-32 bg-honolulu-blue/20 dark:bg-honolulu-blue/10 rounded-full blur-2xl"
                 animate={{
                   scale: [1, 1.3, 1],
                 }}
