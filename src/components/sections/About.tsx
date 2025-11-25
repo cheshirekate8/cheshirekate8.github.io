@@ -73,7 +73,11 @@ const About = () => {
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <div className="w-full h-full rounded-2xl bg-gradient-to-br from-vivid-sky via-pacific-cyan/20 to-honolulu-blue/20 dark:from-marian-blue dark:via-pacific-cyan/20 dark:to-honolulu-blue/20 flex items-center justify-center border-2 border-pacific-cyan/30 dark:border-vivid-sky/30">
-                <img src="./headshot.png" className="h-full rounded-2xl" alt="Katie Young's Professtional Headshot" />
+                <img
+                  src="./headshot.png"
+                  className="h-full rounded-2xl"
+                  alt="Katie Young's Professtional Headshot"
+                />
               </div>
 
               {/* Decorative elements */}

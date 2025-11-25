@@ -48,7 +48,11 @@ const Experience = () => {
                   <div className="flex flex-wrap items-center gap-3 text-lg">
                     <span className="text-pacific-cyan dark:text-vivid-sky font-semibold flex items-center gap-2">
                       {exp.logo ? (
-                        <img src={exp.logo} className="w-12" alt={`${exp.company}'s logo`} />
+                        <img
+                          src={exp.logo}
+                          className="w-12"
+                          alt={`${exp.company}'s logo`}
+                        />
                       ) : (
                         <span className="text-2xl">
                           {index % 3 === 0

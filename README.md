@@ -41,7 +41,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Tailwin
   - Lighthouse score over 95 
     - Color contrasts
     - SEO - Needs meta description
-    - 
+    - Change favicon
   - Combine socials and personal info data types
   - Actually use all the data in the data folder instead of hard coding it
   - Remove all commented code

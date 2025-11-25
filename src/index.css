@@ -59,3 +59,10 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+@media (max-width: 768px) {
+  .blur-2xl,
+  .blur-3xl {
+    filter: none !important;
+  }
+}
