@@ -74,13 +74,6 @@ const Navbar = () => {
               </a>
             ))}
             <ThemeToggle />
-            {/* <a
-              href="#contact"
-              onClick={(e) => handleClick(e, "#contact")}
-              className="bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white px-6 py-2 rounded-lg font-medium transition-colors"
-            >
-              Contact
-            </a> */}
           </div>
 
           {/* Mobile Menu Button */}

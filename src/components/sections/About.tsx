@@ -1,6 +1,5 @@
 import {
   SiFramer,
-  SiGit,
   SiGithub,
   SiHtml5,
   SiJavascript,

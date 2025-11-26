@@ -5,8 +5,6 @@ import { socialLinks } from "../../data/social";
 import { navLinks } from "../../data/navigation";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -28,7 +26,6 @@ const Footer = () => {
     <footer className="bg-federal-blue text-light-cyan border-t border-pacific-cyan/30">
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Left - Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-vivid-sky via-pacific-cyan to-vivid-sky bg-clip-text text-transparent mb-2">
               Katie Young
@@ -38,7 +35,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Center - Quick Links */}
           <div>
             <h4 className="text-lg font-semibold text-vivid-sky mb-4">
               Quick Links
@@ -60,7 +56,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Right - Social Links */}
           <div>
             <h4 className="text-lg font-semibold text-vivid-sky mb-4">
               Connect
@@ -87,7 +82,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-pacific-cyan/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-4 text-sm text-light-cyan/60">
             <span>Built with Vite, React, TypeScript & Tailwind CSS</span>
@@ -95,7 +89,6 @@ const Footer = () => {
             <span>Animated with Framer Motion</span>
           </div>
 
-          {/* Back to Top Button */}
           <motion.button
             onClick={scrollToTop}
             whileHover={{ scale: 1.1 }}

@@ -1,5 +1,4 @@
 import {
-  Si99designs,
   SiFigma,
   SiFramer,
   SiGithub,
@@ -16,14 +15,12 @@ import {
   SiTailwindcss,
   SiTauri,
   SiTypescript,
-  SiVite,
 } from "@icons-pack/react-simple-icons";
 import { SkillCategory } from "../types";
 import {
   Bug,
   Cloud,
   MonitorSmartphone,
-  PaintBucket,
   PersonStanding,
   Puzzle,
 } from "lucide-react";

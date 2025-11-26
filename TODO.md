@@ -1,8 +1,8 @@
 ## ✅ To Do
-- Cleanup, comb through every single file
-  - Find all unused vars
-  - Remove all commented code
-  - ???
+- Found in Cleanup
+  - Change all buttons to Buttons OR delete Button
+  - Write and use SectionHeading OR delete it
+  - Go through App.css and index.css
 
 ## ✅ To Do LATER
 - Hero

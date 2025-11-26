@@ -35,5 +35,5 @@ export interface Experience {
   endDate: string; // Use "Present" for current job
   responsibilities: string[];
   technologies?: string[];
-  logo?: string; // Optional company logo
+  logo?: string;
 }
