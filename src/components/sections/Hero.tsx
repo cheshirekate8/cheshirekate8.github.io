@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { personalInfo } from "../../data/info";
 import { ArrowDown, Download } from "lucide-react";
 
 const Hero = () => {
@@ -74,7 +73,7 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue bg-clip-text text-transparent">
-              {personalInfo.name}
+              Katie Young
             </span>
           </motion.h1>
 

@@ -1,11 +1,8 @@
 ## ✅ To Do
-- General
-  - Remove unnecessary data types, Add name to socials to remove other data type
-  - Actually use all the data in the data folder instead of hard coding it
-  - Change favicon
-  - Fix Vite + React
+- Cleanup, comb through every single file
+  - Find all unused vars
   - Remove all commented code
-  - Cleanup, comb through every single file
+  - ???
 
 ## ✅ To Do LATER
 - Hero

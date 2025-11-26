@@ -1,7 +1,6 @@
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
 import { ArrowUp, Linkedin, Mail } from "lucide-react";
-import { personalInfo } from "../../data/info";
 import { socialLinks } from "../../data/social";
 
 const Footer = () => {
@@ -31,7 +30,7 @@ const Footer = () => {
           {/* Left - Brand */}
           <div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-vivid-sky via-pacific-cyan to-vivid-sky bg-clip-text text-transparent mb-2">
-              {personalInfo.name}
+              Katie Young
             </h3>
             <p className="text-light-cyan/70">
               Frontend Developer crafting beautiful web experiences.

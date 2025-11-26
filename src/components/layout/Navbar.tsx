@@ -1,9 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { personalInfo } from "../../data/info";
 import { navLinks } from "../../data/navigation";
 import ThemeToggle from "../ui/ThemeToggle";
-import { Hamburger, HamburgerIcon, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +58,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            {personalInfo.name}
+            Katie Young
           </motion.a>
 
           {/* Desktop Navigation */}
