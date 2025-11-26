@@ -2,6 +2,7 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
 import { ArrowUp, Linkedin, Mail } from "lucide-react";
 import { socialLinks } from "../../data/social";
+import { navLinks } from "../../data/navigation";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -43,38 +44,19 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="#about"
-                  className="text-light-cyan/70 hover:text-vivid-sky transition-colors"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-light-cyan/70 hover:text-vivid-sky transition-colors"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className="text-light-cyan/70 hover:text-vivid-sky transition-colors"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-light-cyan/70 hover:text-vivid-sky transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
+              {navLinks.map((navLink) => (
+                <li>
+                  <motion.a
+                    key={navLink.label}
+                    href={navLink.href}
+                    whileHover={{ scale: 1.2, y: -3 }}
+                    className="text-light-cyan/70 hover:text-vivid-sky transition-colors"
+                    aria-label={navLink.label}
+                  >
+                    {navLink.label}
+                  </motion.a>
+                </li>
+              ))}
             </ul>
           </div>
 
