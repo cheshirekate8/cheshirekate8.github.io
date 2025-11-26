@@ -1,8 +1,22 @@
 ## ✅ To Do
 - Found in Cleanup
-  - Change all buttons to Buttons OR delete Button
   - Write and use SectionHeading OR delete it
-  - Go through App.css and index.css
+    - Copy/Paste from one
+    - Make it dynamic
+    - replace all headings
+      - About
+      - Contact
+      - Experience
+      - Projects
+      - Skills
+  - Change all buttons to Buttons OR delete Button
+    - Find all button styles currently used in project
+    - Choose primary, secondary, tertiary, download, etc
+    - Assign in button file
+    - Replace all buttons in project
+      - Hero (3)
+      - Projects (2)
+  - Go through App.css and index.css and remove unused CSS
 
 ## ✅ To Do LATER
 - Hero
