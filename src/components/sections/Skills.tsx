@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { skillCategories } from "../../data/skills";
 import SkillCard from "../ui/SkillCard";
 import { colors } from "../../data/styles";
+import SectionHeading from "../ui/SectionHeading";
 
 const Skills = () => {
   const ref = useRef(null);
@@ -21,10 +22,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-marian-blue dark:text-vivid-sky mb-4">
-            Skills & Expertise
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue mx-auto mb-6"></div>
+          <SectionHeading title="Skills & Expertise" />
           <p className="text-lg text-marian-blue/70 dark:text-light-cyan/70 max-w-2xl mx-auto">
             A comprehensive overview of my technical skills and proficiency
             levels. I'm always learning and expanding my skill set.

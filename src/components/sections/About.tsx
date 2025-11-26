@@ -10,6 +10,7 @@ import {
 } from "@icons-pack/react-simple-icons";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import SectionHeading from "../ui/SectionHeading";
 
 const About = () => {
   const ref = useRef(null);
@@ -56,10 +57,7 @@ const About = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-marian-blue dark:text-vivid-sky mb-4 text-center">
-            About Me
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue mx-auto mb-12"></div>
+          <SectionHeading title="About Me" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">

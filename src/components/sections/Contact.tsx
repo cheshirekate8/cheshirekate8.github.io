@@ -3,6 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { Linkedin, Mail } from "lucide-react";
 import { useRef } from "react";
 import { socialLinks } from "../../data/social";
+import SectionHeading from "../ui/SectionHeading";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -61,10 +62,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-marian-blue dark:text-vivid-sky mb-4">
-            Let's Connect
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue mx-auto mb-6"></div>
+          <SectionHeading title="Let's Connect" />
         </motion.div>
 
         {/* Contact Card */}

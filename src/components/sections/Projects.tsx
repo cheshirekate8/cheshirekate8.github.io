@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import { projects } from "../../data/projects";
 import ProjectCard from "../ui/ProjectCard";
 import { SiGithub } from "@icons-pack/react-simple-icons";
+import SectionHeading from "../ui/SectionHeading";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -37,10 +38,8 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-marian-blue dark:text-vivid-sky mb-4">
-            Featured Projects
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue mx-auto mb-6"></div>
+          <SectionHeading title="Featured Projects" />
+
           <p className="text-lg text-marian-blue/70 dark:text-light-cyan/70 max-w-2xl mx-auto">
             Here are some of my recent projects. Each one represents a unique
             challenge and learning experience in my journey as a developer.

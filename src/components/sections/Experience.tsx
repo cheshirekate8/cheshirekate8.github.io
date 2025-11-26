@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { experiences } from "../../data/experience";
+import SectionHeading from "../ui/SectionHeading";
 
 const Experience = () => {
   const ref = useRef(null);
@@ -19,10 +20,8 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-marian-blue dark:text-vivid-sky mb-4">
-            Work Experience
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-honolulu-blue via-pacific-cyan to-honolulu-blue mx-auto mb-6"></div>
+          <SectionHeading title="Work Experience" />
+
           <p className="text-lg text-marian-blue/70 dark:text-light-cyan/70 max-w-2xl mx-auto">
             My professional journey and the amazing companies I've had the
             privilege to work with.
