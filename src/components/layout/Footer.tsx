@@ -39,7 +39,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-vivid-sky mb-4">
               Quick Links
             </h4>
-            <ul className="space-y-2">
+            <ul className="grid grid-cols-2 gap-2">
               {navLinks.map((navLink) => (
                 <li key={navLink.href}>
                   <motion.a
