@@ -4,6 +4,7 @@ import { projects } from "../../data/projects";
 import ProjectCard from "../ui/ProjectCard";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import SectionHeading from "../ui/SectionHeading";
+import Button from "../ui/Button";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -95,15 +96,15 @@ const Projects = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-12"
         >
-          <a
+          <Button
+            as="a"
             href="https://github.com/cheshirekate8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-marian-blue dark:bg-pacific-cyan hover:bg-honolulu-blue dark:hover:bg-honolulu-blue text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105"
           >
             <SiGithub size={20} />
             View More on GitHub
-          </a>
+          </Button>
         </motion.div>
       </div>
     </section>

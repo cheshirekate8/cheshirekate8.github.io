@@ -108,7 +108,7 @@ const Contact = () => {
               className="text-center mt-8"
             >
               <p className="text-marian-blue dark:text-light-cyan mb-2">
-                💼 Open to freelance opportunities and full-time positions
+                💼 Open to contract and freelance opportunities
               </p>
               <p className="text-marian-blue dark:text-light-cyan">
                 📝 Professional references available upon request

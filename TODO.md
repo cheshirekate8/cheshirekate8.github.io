@@ -1,16 +1,8 @@
 ## ✅ To Do
-- Found in Cleanup
-  - Change all buttons to Buttons OR delete Button
-    - Find all button styles currently used in project
-    - Choose primary, secondary, tertiary, etc
-    - Assign in button file
-    - Replace all buttons in project
-      - Hero (3)
-      - About (1)
-      - Projects (2)
-      - Contact (1)
+(empty — all cleanup items complete!)
 
 ## ✅ Done
+- ~~Change all buttons to Buttons OR delete Button~~ (Unified with 3 variants: primary, secondary, ghost)
 - ~~Go through App.css and index.css and remove unused CSS~~ (App.css deleted — was all Vite boilerplate)
 - Extracted shared `scrollToSection` utility (`src/utils/scroll.ts`)
 - Fixed missing `key` on `<li>` in Footer

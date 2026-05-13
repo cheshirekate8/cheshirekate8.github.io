@@ -11,6 +11,7 @@ import {
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import SectionHeading from "../ui/SectionHeading";
+import Button from "../ui/Button";
 
 const About = () => {
   const ref = useRef(null);
@@ -130,12 +131,9 @@ const About = () => {
             </p>
 
             <div className="pt-4">
-              <a
-                href="#contact"
-                className="inline-block bg-honolulu-blue hover:bg-marian-blue dark:bg-pacific-cyan dark:hover:bg-honolulu-blue text-white px-6 py-3 rounded-lg font-medium transition-all hover:scale-105"
-              >
+              <Button as="a" href="#contact">
                 Let's Work Together
-              </a>
+              </Button>
             </div>
           </motion.div>
         </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { scrollToSection } from "../../utils/scroll";
+import Button from "../ui/Button";
 
 const Hero = () => {
 
@@ -75,15 +76,16 @@ const Hero = () => {
             Full Stack Developer with Frontend Expertise
           </motion.h2>
 
-          {/* <motion.p
+          <motion.p
             className="text-lg md:text-xl text-marian-blue/80 dark:text-light-cyan/80 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            I craft beautiful, responsive web experiences with modern
-            technologies. Passionate about clean code and pixel-perfect designs.
-          </motion.p> */}
+            I build desktop and web applications with modern frontend
+            frameworks, from security-focused tools to full-featured product
+            experiences.
+          </motion.p>
 
           <motion.div
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -91,26 +93,23 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <button
+            <Button
+              variant="ghost"
               onClick={() => scrollToSection("#projects")}
-              className="bg-vivid-sky/50 dark:bg-federal-blue/50 text-marian-blue dark:text-light-cyan px-6 py-3 rounded-lg font-medium transition-all border border-pacific-cyan/30 dark:border-vivid-sky/30 hover:scale-105 hover:shadow-lg"
+              className="px-6"
             >
               View My Work
-            </button>
-            <a
-              href="/resume.pdf"
-              download
-              className="bg-honolulu-blue text-white px-8 py-3 rounded-lg font-medium transition-all hover:scale-105 hover:shadow-lg flex items-center gap-2"
-            >
+            </Button>
+            <Button as="a" href="/resume.pdf" download>
               <Download />
               Download Resume
-            </a>
-            <button
+            </Button>
+            <Button
+              variant="secondary"
               onClick={() => scrollToSection("#contact")}
-              className="bg-transparent border-2 border-honolulu-blue dark:border-pacific-cyan text-honolulu-blue dark:text-vivid-sky hover:bg-honolulu-blue/10 dark:hover:bg-pacific-cyan/10 px-8 py-3 rounded-lg font-medium transition-all hover:scale-105"
             >
               Get In Touch
-            </button>
+            </Button>
           </motion.div>
         </motion.div>
 

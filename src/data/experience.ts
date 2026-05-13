@@ -2,6 +2,30 @@ import { Experience } from "../types";
 
 export const experiences: Experience[] = [
   {
+    id: "job-0",
+    company: "LaserLinc",
+    position: "Software Engineer",
+    location: "Fairborn, OH",
+    startDate: "Jan 2026",
+    endDate: "Present",
+    responsibilities: [
+      "Built key HMI chart and gauge components (column gauge, histogram, bar chart) with live data integration and a custom SciChart theme",
+      "Implemented snap-to-grid, snap-on-resize, keyboard shortcuts, and a loader service with contextual messaging for the screen editor",
+      "Contributed to the Vue 3 + Tauri desktop migration, porting data bindings and screen properties while resolving alignment and UI bugs",
+      "Designed proprietary icon assets for the element library and delivered UI polish including light/dark theming, transparency controls, and monitor search",
+    ],
+    technologies: [
+      "Vue 3",
+      "TypeScript",
+      "Tauri",
+      "Rust",
+      "Pinia",
+      "SciChart",
+      "Vite",
+    ],
+    logo: "./laserLincLogo.png",
+  },
+  {
     id: "job-1",
     company: "Dusk Labs",
     position: "Software Engineer",
@@ -106,20 +130,4 @@ export const experiences: Experience[] = [
     technologies: ["Node.js", "React", "JavaScript", "CSS", "Postgres"],
     logo: "./aaLogo.jpeg",
   },
-  // {
-  //   id: "job-0",
-  //   company: "Company",
-  //   position: "Job",
-  //   location: "Place",
-  //   startDate: "Month 2025",
-  //   endDate: "Month 2025",
-  //   responsibilities: [
-  //     "Built",
-  //     "Built",
-  //     "Built",
-  //     "Built",
-  //   ],
-  //   technologies: ["Node.js", "React", "JavaScript", "Graphql", "CSS", "CMS", "Redux"],
-  //   logo: undefined
-  // },
 ];
