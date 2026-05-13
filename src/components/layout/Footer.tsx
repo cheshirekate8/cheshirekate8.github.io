@@ -41,9 +41,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2">
               {navLinks.map((navLink) => (
-                <li>
+                <li key={navLink.href}>
                   <motion.a
-                    key={navLink.label}
                     href={navLink.href}
                     whileHover={{ scale: 1.2, y: -3 }}
                     className="text-light-cyan/70 hover:text-vivid-sky transition-colors"

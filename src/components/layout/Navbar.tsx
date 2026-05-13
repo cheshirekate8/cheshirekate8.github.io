@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { navLinks } from "../../data/navigation";
 import ThemeToggle from "../ui/ThemeToggle";
 import { Menu, X } from "lucide-react";
+import { scrollToSection } from "../../utils/scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,24 +18,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll handler
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string,
   ) => {
     e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      const offset = 80; // Height of navbar
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-      setIsOpen(false); // Close mobile menu after click
-    }
+    scrollToSection(href);
+    setIsOpen(false);
   };
 
   return (

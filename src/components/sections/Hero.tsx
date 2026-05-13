@@ -1,19 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
+import { scrollToSection } from "../../utils/scroll";
 
 const Hero = () => {
-  const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-vivid-sky via-white to-pacific-cyan/10 dark:from-federal-blue dark:via-marian-blue dark:to-pacific-cyan/20">

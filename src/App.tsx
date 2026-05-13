@@ -8,13 +8,19 @@ import Footer from "./components/layout/Footer";
 import ScrollProgress from "./components/ui/ScrollProgress";
 import Experience from "./components/sections/Experience";
 
-function App() {
+const App = () => {
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[70] focus:bg-honolulu-blue focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+      >
+        Skip to main content
+      </a>
       <ScrollProgress />
       <div className="min-h-screen bg-white dark:bg-federal-blue">
         <Navbar />
-        <main>
+        <main id="main-content">
           <section id="hero">
             <Hero />
           </section>
@@ -38,6 +44,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;

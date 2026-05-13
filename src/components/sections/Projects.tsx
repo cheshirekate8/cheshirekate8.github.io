@@ -14,10 +14,10 @@ const Projects = () => {
   );
 
   const categories = [
-    { id: "all", label: "All Projects" },
-    { id: "web-app", label: "Web Apps" },
-    { id: "website", label: "Websites" },
-    { id: "tool", label: "Tools" },
+    { id: "all" as const, label: "All Projects" },
+    { id: "web-app" as const, label: "Web Apps" },
+    { id: "website" as const, label: "Websites" },
+    { id: "tool" as const, label: "Tools" },
   ];
 
   const filteredProjects =
@@ -56,7 +56,7 @@ const Projects = () => {
           {categories.map((category) => (
             <button
               key={category.id}
-              onClick={() => setFilter(category.id as typeof filter)}
+              onClick={() => setFilter(category.id)}
               className={`px-6 py-2 rounded-lg font-medium transition-all ${
                 filter === category.id
                   ? "bg-honolulu-blue text-white shadow-lg scale-105"

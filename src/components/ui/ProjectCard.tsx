@@ -22,6 +22,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           <img
             src={project.image}
             alt={`${project.title}'s Demo image`}
+            loading="lazy"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
         ) : (
@@ -73,7 +74,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
         {/* Construction badge */}
         {project.underConstruction && (
-          <div className="absolute top-4 right-4 bg-honolulu-blue text-white px-3 py-1 rounded-full text-sm font-medium">
+          <div className={`absolute ${project.featured ? "top-12" : "top-4"} right-4 bg-honolulu-blue text-white px-3 py-1 rounded-full text-sm font-medium`}>
             🚧 Under Construction
           </div>
         )}
