@@ -51,6 +51,7 @@ const Experience = () => {
                           src={exp.logo}
                           className="w-12"
                           alt={`${exp.company}'s logo`}
+                          loading="lazy"
                         />
                       ) : (
                         <span className="text-2xl">

@@ -1,12 +1,12 @@
 import {
-  SiFramer,
   SiGithub,
-  SiHtml5,
-  SiJavascript,
   SiReact,
+  SiRust,
   SiTailwindcss,
+  SiTauri,
   SiTypescript,
   SiVite,
+  SiVuedotjs,
 } from "@icons-pack/react-simple-icons";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -19,13 +19,13 @@ const About = () => {
 
   const technologies = [
     { name: "React", icon: <SiReact size={40} color="#61DAFB" /> },
+    { name: "Vue", icon: <SiVuedotjs size={40} color="#4FC08D" /> },
     { name: "TypeScript", icon: <SiTypescript size={40} color="#3178C6" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss size={40} color="#06B6D4" /> },
-    { name: "Framer Motion", icon: <SiFramer size={40} color="#0055FF" /> },
-    { name: "JavaScript", icon: <SiJavascript size={40} color="#F7DF1E" /> },
-    { name: "HTML/CSS", icon: <SiHtml5 size={40} color="#E34F26" /> },
-    { name: "Github", icon: <SiGithub size={40} color="#181717" /> },
+    { name: "Tauri", icon: <SiTauri size={40} color="#24C8D8" /> },
+    { name: "Rust", icon: <SiRust size={40} className="text-[#000000] dark:text-[#CE422B]" /> },
     { name: "Vite", icon: <SiVite size={40} color="#646CFF" /> },
+    { name: "GitHub", icon: <SiGithub size={40} className="text-[#181717] dark:text-[#c9d1d9]" /> },
   ];
 
   const containerVariants = {
@@ -74,7 +74,8 @@ const About = () => {
                 <img
                   src="./headshot.png"
                   className="h-full rounded-2xl"
-                  alt="Katie Young's Professtional Headshot"
+                  alt="Katie Young's Professional Headshot"
+                  loading="lazy"
                 />
               </div>
 
@@ -113,15 +114,16 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
-              I'm a software engineer with 4 years of experience building web
-              and desktop applications, specializing in frontend development
-              with React and TypeScript. I love learning new technologies like
-              Rust and using AI-assisted development to work efficiently.
+              I'm a software engineer with 4 years of experience building
+              desktop and web applications using React, Vue, TypeScript, and
+              Rust. I love learning new technologies and using AI-assisted
+              development to work efficiently.
             </p>
 
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
-              My background spans agency and product environments, from security
-              focused desktop applications to web applications and e-commerce.
+              My background spans agency and product environments, from
+              security-focused desktop applications to web platforms and
+              e-commerce.
             </p>
 
             <p className="text-lg text-marian-blue/80 dark:text-light-cyan/80 leading-relaxed">
@@ -155,7 +157,7 @@ const About = () => {
             animate={isInView ? "visible" : "hidden"}
             className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
           >
-            {technologies.map((tech, index) => (
+            {technologies.map((tech) => (
               <motion.div
                 key={tech.name}
                 variants={itemVariants}

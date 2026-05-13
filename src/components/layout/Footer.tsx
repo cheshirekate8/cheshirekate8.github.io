@@ -31,7 +31,7 @@ const Footer = () => {
               Katie Young
             </h3>
             <p className="text-light-cyan/70">
-              Frontend Developer crafting beautiful web experiences.
+              Software Engineer building desktop and web applications.
             </p>
           </div>
 
